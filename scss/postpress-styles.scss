@@ -1,0 +1,73 @@
+@import "bootstrap/bootstrap";
+@import "font-awesome/font-awesome";
+@import "pp-grid";
+@import "sidebar";
+@import "top-widgets";
+
+body{
+	background-color: #e0e0e0;
+}
+.card img.wp-post-image{
+  //TODO
+ 	width: 100%;
+}
+
+.img-responsive{
+	width: 100%;
+}
+
+.btn-toggle-menu{
+ 	height: 40px;
+}
+
+input, textarea{
+	@extend .form-control; 
+	//border 1px solid red;
+}
+
+input.submit{
+    @extend .btn;
+    @extend .btn-primary-outline;
+    @extend .btn-sm;
+    display: inline;
+    float: right;
+    max-width: 150px;
+}
+
+#list-posts{
+	li.comment {
+		list-style-type: none;
+		article{
+			@extend .card;
+			@extend .card-block;
+			.reply{
+				//@extend .card-footer;
+			}
+		}
+	}
+	#respond{
+		@extend .card;
+		@extend .card-block;
+		form{
+			overflow: auto;
+		}
+	}
+}
+
+
+.card img.wp-post-image, #list-posts li.comment article img.wp-post-image, #list-posts #respond img.wp-post-image{
+	height: 100%;
+}
+
+ @media (min-width: 62em){
+ 	img#logo{
+ 		max-width: 100%;
+ 		max-height: 100%;
+ 	}
+ }
+
+
+
+
+
+
