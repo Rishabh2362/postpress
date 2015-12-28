@@ -7,10 +7,7 @@
 body{
 	background-color: #e0e0e0;
 }
-.card img.wp-post-image{
-  //TODO
- 	width: 100%;
-}
+
 
 .img-responsive{
 	width: 100%;
@@ -35,6 +32,14 @@ input.submit{
 }
 
 #list-posts{
+	article{
+		@extend .card;
+		//border: 1px solid red;
+		&.sticky{
+			//@extend .card-inverse;
+			@extend .card-primary;
+		}
+	}
 	li.comment {
 		list-style-type: none;
 		article{
@@ -55,8 +60,11 @@ input.submit{
 }
 
 
-.card img.wp-post-image, #list-posts li.comment article img.wp-post-image, #list-posts #respond img.wp-post-image{
-	height: 100%;
+
+.card img.wp-post-image{
+  //TODO better
+ 	width: 100%;
+ 	height: 100%;
 }
 
  @media (min-width: 62em){

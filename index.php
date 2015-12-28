@@ -22,7 +22,7 @@
           <?php endif; ?> 
 
             <section id="list-posts">
-              <div class="card card-block card-inverse card-primary">
+              <!--div class="card card-block card-inverse card-primary">
                 <h4 class="card-title">Featured Post / Sticky Post</h4>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="card-link">Read More</a>
@@ -30,13 +30,13 @@
                   <a href="#" class="card-link"><i class="fa fa-twitter fa-lg"></i></a>
                   <a href="#" class="card-link"><i class="fa fa-google-plus fa-lg"></i></a>
                   <a href="#" class="card-link"><i class="fa fa-pinterest fa-lg"></i></a>
-              </div>
+              </div-->
 
               <!-- WP Loop -->
               <?php if (have_posts()) : ?>
               <?php while (have_posts()) : the_post(); ?>
 
-              <div class="card" id="post-<?php the_ID(); ?>">
+              <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> 
                 <?php if (has_post_thumbnail()) { ?>
                   <div class="card-img-overlay">
                     <h4 class="card-title">
@@ -79,7 +79,7 @@
                     <?php comments_number( '', '<i class="fa fa-comment-o"></i> <small>One Comment</small>', '<i class="fa fa-comment-o"></i> <small>% Comments</small>' );?>
                   </a>
                 </div>
-              </div>
+              </article>
               <?php comments_template(); ?>
             <?php endwhile; ?>
             <?php else : ?>
