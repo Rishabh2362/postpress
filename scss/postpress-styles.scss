@@ -35,9 +35,26 @@ input.submit{
 	article{
 		@extend .card;
 		//border: 1px solid red;
+		.card-img-overlay{
+			max-height: 130px;
+		}
 		&.sticky{
-			//@extend .card-inverse;
+			@extend .card-inverse;
 			@extend .card-primary;
+			a{
+				//color: darken($brand-primary, 15%);
+				color: white;
+			}
+			p, small{
+				@extend .card-text;
+			}
+			.card-footer{
+				//border: 1px solid red;
+				//background-color: $brand-primary;
+				background-color: lighten( $brand-primary, 10% );
+				//border-top: 1px solid darken($brand-primary, 15%);
+				border-top: 1px solid $brand-primary;
+			}
 		}
 	}
 	li.comment {
