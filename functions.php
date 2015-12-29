@@ -88,6 +88,11 @@ function postpress_top_widgets_init() {
 }
 add_action( 'widgets_init', 'postpress_top_widgets_init' );
 
+function excerpt_more_link( $more ) {
+    return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( '[+]', 'postpress' ) . '</a>';
+}
+add_filter( 'excerpt_more', 'excerpt_more_link' );
+
 /*****************************
 WP Theme Check Recommendations
 ******************************/
