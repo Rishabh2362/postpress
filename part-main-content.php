@@ -68,8 +68,22 @@
                   </a>
                 </div>
               </article>
-              <?php comments_template(); ?>
-            <?php endwhile; ?>
+              <?php comments_template(); ?> <!-- Change this: put in single -->
+            <?php endwhile; ?> 
+
+            <!-- Navigation -->
+            <?php   
+            $prev_link = get_previous_posts_link('&laquo; '.__('Older Entries', 'iamsocial'));
+            $next_link = get_next_posts_link(__('Newer Entries', 'iamsocial').' &raquo;');
+            // checking if there is next or previous. If yes, show the nav.
+            if ($prev_link || $next_link) { ?>
+              <nav class="nav nav-inline" id="prev-next">
+                <?php next_posts_link( '<i class="fa fa-chevron-left"></i> '.__('Older Posts', 'iamsocial') ); ?>
+                <?php previous_posts_link( __('Newer Posts', 'iamsocial').' <i class="fa fa-chevron-right"></i>' ); ?>
+              </nav>
+            <?php } ?>   
+
+            <!-- No post found -->           
             <?php else : ?>
                     <h2 class="center"><?php _e('Not Found','postpress'); ?></h2>
                     <p class="center"><?php _e("Sorry, but you are looking for something that isn't here.", "postpress"); ?></p>
