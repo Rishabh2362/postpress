@@ -93,6 +93,15 @@ function excerpt_more_link( $more ) {
 }
 add_filter( 'excerpt_more', 'excerpt_more_link' );
 
+/* That's only if JetPack's is installed */
+/*
+add_theme_support( 'infinite-scroll', array(
+    'container' => 'list-posts',
+    'footer' => 'post',
+) );
+*/
+/* TODO: http://code.tutsplus.com/tutorials/how-to-create-infinite-scroll-pagination--wp-24873 */
+
 /*****************************
 WP Theme Check Recommendations
 ******************************/

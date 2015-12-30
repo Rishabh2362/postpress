@@ -9944,6 +9944,12 @@ input.submit {
   }
 }
 
+#prev-next {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 /************* wp-core.less */
 /* TODO: Find out and style these classes*/
 .bypostauthor {

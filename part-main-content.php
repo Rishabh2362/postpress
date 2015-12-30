@@ -71,17 +71,25 @@
               <?php comments_template(); ?> <!-- Change this: put in single -->
             <?php endwhile; ?> 
 
-            <!-- Navigation -->
+            <!-- Navigation within category/archive/blog -->
             <?php   
-            $prev_link = get_previous_posts_link('&laquo; '.__('Older Entries', 'iamsocial'));
-            $next_link = get_next_posts_link(__('Newer Entries', 'iamsocial').' &raquo;');
+            $prev_link = get_previous_posts_link();
+            $next_link = get_next_posts_link();
             // checking if there is next or previous. If yes, show the nav.
             if ($prev_link || $next_link) { ?>
               <nav class="nav nav-inline" id="prev-next">
-                <?php next_posts_link( '<i class="fa fa-chevron-left"></i> '.__('Older Posts', 'iamsocial') ); ?>
-                <?php previous_posts_link( __('Newer Posts', 'iamsocial').' <i class="fa fa-chevron-right"></i>' ); ?>
+                <?php next_posts_link( '<i class="fa fa-chevron-left"></i> '.__('Previous Posts', 'postpress') ); ?>
+                <?php previous_posts_link( __('Next Posts', 'postpress').' <i class="fa fa-chevron-right"></i>' ); ?>
               </nav>
-            <?php } ?>   
+            <?php } ?> 
+
+            <!-- Navigation within single -->
+            <?php  if (is_single()){  ?>
+                    <nav class="nav nav-inline" id="prev-next">
+                        <?php next_post_link('%link', '<i class="fa fa-chevron-left"></i> '.__('Prev', 'postpress'), TRUE); ?>
+                        <?php previous_post_link('%link', __('Next', 'postpress').' <i class="fa fa-chevron-right"></i>', TRUE); ?>
+                    </nav>
+            <?php } ?>  
 
             <!-- No post found -->           
             <?php else : ?>
