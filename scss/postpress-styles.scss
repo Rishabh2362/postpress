@@ -10,7 +10,8 @@ body{
 
 
 .img-responsive{
-	width: 100%;
+	max-width: 100%;
+	height: auto;
 }
 
 .btn-toggle-menu{
@@ -32,11 +33,16 @@ input.submit{
 }
 
 #list-posts{
+	max-width:672px;
 	article{
 		@extend .card;
 		//border: 1px solid red;
 		.card-img-overlay{
 			max-height: 130px;
+		}
+		img,.wp-caption{
+			@extend .img-responsive;
+			//max-width: 150px;
 		}
 		&.sticky{
 			@extend .card-inverse;

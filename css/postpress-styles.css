@@ -9897,8 +9897,9 @@ body {
   background-color: #e0e0e0;
 }
 
-.img-responsive {
-  width: 100%;
+.img-responsive, #list-posts article img, #list-posts article .wp-caption {
+  max-width: 100%;
+  height: auto;
 }
 
 .btn-toggle-menu {
@@ -9909,6 +9910,10 @@ input.submit {
   display: inline;
   float: right;
   max-width: 150px;
+}
+
+#list-posts {
+  max-width: 672px;
 }
 
 #list-posts article .card-img-overlay {
