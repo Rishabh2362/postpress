@@ -52,6 +52,32 @@
                     } else {
                         the_excerpt();
                     } ?>
+<?php
+              /* Check if the post is divided in several pages. 
+              If so, show the pagination
+               */
+              global $numpages;
+              if ( $numpages > 1 ) {
+                  if (is_single() || is_page()){
+                      $args = array(
+                          'before'           => '<nav><small>' . __( 'Pages:', 'iamsocial' ),
+                          'after'            => '</small></nav>',
+                          'link_before'      => '',
+                          'link_after'       => '',
+                          'next_or_number'   => 'number',
+                          'separator'        => ' ',
+                          'nextpagelink'     => __( 'Next page', 'iamsocial' ),
+                          'previouspagelink' => __( 'Previous page', 'iamsocial' ),
+                          'pagelink'         => '%',
+                          'echo'             => 1
+                      );
+                      echo '<div id="navLinkPages">';
+                          wp_link_pages( $args );
+                      echo '</div>';
+                  }
+              } 
+              ?>
+
                   <small class="postmetadata"><i class="fa fa-folder-open-o"></i> <?php _e( 'Posted in', 'postpress' ); ?> <?php the_category( ', ' ); ?></small><br>
                     <?php if (has_tag()) { ?>
                         <small><i class="fa fa-tags"></i> <?php the_tags(); ?></small><br>
@@ -68,6 +94,31 @@
                   </a>
                 </div>
               </article>
+              <?php
+              /* Check if the post is divided in several pages. 
+              If so, show the pagination
+               */
+              global $numpages;
+              if ( $numpages > 1 ) {
+                  if (is_single() || is_page()){
+                      $args = array(
+                          'before'           => '<nav><small>' . __( 'Pages:', 'iamsocial' ),
+                          'after'            => '</small></nav>',
+                          'link_before'      => '',
+                          'link_after'       => '',
+                          'next_or_number'   => 'number',
+                          'separator'        => ' ',
+                          'nextpagelink'     => __( 'Next page', 'iamsocial' ),
+                          'previouspagelink' => __( 'Previous page', 'iamsocial' ),
+                          'pagelink'         => '%',
+                          'echo'             => 1
+                      );
+                      echo '<article>';
+                          wp_link_pages( $args );
+                      echo '</article>';
+                  }
+              } 
+              ?>
               <?php comments_template(); ?> <!-- Change this: put in single -->
             <?php endwhile; ?> 
 

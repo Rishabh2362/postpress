@@ -9920,6 +9920,16 @@ input.submit {
   max-height: 130px;
 }
 
+#list-posts article #navLinkPages {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-bottom: 1rem;
+}
+
+#list-posts article #navLinkPages small {
+  font-size: 1rem;
+}
+
 #list-posts article.sticky a {
   color: white;
 }

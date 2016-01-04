@@ -34,6 +34,7 @@ input.submit{
 
 #list-posts{
 	max-width:672px;
+	//max-width:683px;
 	article{
 		@extend .card;
 		//border: 1px solid red;
@@ -43,6 +44,14 @@ input.submit{
 		img,.wp-caption{
 			@extend .img-responsive;
 			//max-width: 150px;
+		}
+		#navLinkPages{
+			border-top: 1px solid gray;
+			border-bottom: 1px solid gray;
+			margin-bottom: 1rem;
+			small{
+				font-size: 1rem;
+			}
 		}
 		&.sticky{
 			@extend .card-inverse;
