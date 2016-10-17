@@ -29,8 +29,6 @@
     <meta name="author" content="Jeff Marx, Isabelle Garcia">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>PostPress</title>
-
     <?php wp_head(); ?> 
 
     <!-- TODO: add to functions.php and load from theme css folder 

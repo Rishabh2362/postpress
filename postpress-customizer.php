@@ -15,7 +15,7 @@ postpress general settings
     $wp_customize->add_panel( 'postpress_general', array(
         'priority'       => 10,
         'capability'     => 'edit_theme_options',
-        'title'          => __('postpress General Settingssss', 'postpress'),
+        'title'          => __('postpress General Settings', 'postpress'),
         'description'    => __('Change your colors and fonts', 'postpress'),
     ) );
 
