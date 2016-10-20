@@ -19,6 +19,32 @@ postpress general settings
 		'description'    => __( 'Change your colors and fonts', 'postpress' ),
 	) );
 
+	//Postpress colors scheme
+		$wp_customize->add_section( 'postpress_colors_section' , array(
+				'title'       => __( 'PostPress Colors', 'postpress' ),
+				'priority'    => '30',
+				'panel'       => 'postpress_general',
+				'description' => __( 'Choose one color theme to change the look and feel of your site', 'postpress' ),
+		) );
+		$wp_customize->add_setting( 'css_sheet' , array(
+				'default' 				=> 'default',
+				'sanitize_callback'  	=> 'postpress_sanitize_select',
+		) );
+		$wp_customize->add_control(
+			new WP_Customize_Control(
+				$wp_customize, 'css_sheet', array(
+						'label'          => __( 'Change the colors of your theme', 'postpress' ),
+						'section'        => 'postpress_colors_section',
+						'settings'       => 'css_sheet',
+						'type'           => 'radio',
+						'choices'        => array(
+							'default' 		=> __( 'Default', 'postpress' ),
+							'yellow' 	=> __( 'Yellow', 'postpress' ),
+						),
+				)
+			)
+		);
+
 	//postpress fonts
 
 	//Prepare the array of fonts to select from
@@ -56,6 +82,30 @@ postpress general settings
 			)
 		)
 	);
+
+/*****************************
+PostPress Social General Settings
+Load css selected
+******************************/
+function postpress_load_css_colors() {
+		$css = array(
+				'default' => array(
+						'name' => 'default',
+						'title' => __( 'default', 'postpress' ),
+						'file' => 'default.css',
+				),
+				'yellow' => array(
+						'name' => 'yellow',
+						'title' => __( 'yellow', 'postpress' ),
+						'file' => 'yellow.css',
+				),
+		);
+		$css_id = get_theme_mod( 'css_sheet', 'default' );
+		wp_enqueue_style( $css[ $css_id ]['file'], get_template_directory_uri().'/css/colors/'.$css[ $css_id ]['file'] );
+
+}
+add_action( 'wp_head', 'postpress_load_css_colors' );
+
 
 /*****************************
 postpress Social Media Icons
