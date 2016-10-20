@@ -23,22 +23,26 @@ postpress general settings
 
 	//Prepare the array of fonts to select from
 	$google_fonts = array(
-					'Abel' => __('Abel','postpress'),
-					'News_Cycle' => __('News Cycle','postpress'),
-					'Open_Sans_Condensed' => __('Open Sans Condensed','postpress'),
-					'Oswald' => __('Oswald','postpress'),
-					'Quicksand' => __('Quicksand','postpress'),
-					'Shadow' => __('Shadow','postpress'),
+					'Covered' => __( 'Covered By Your Grace', 'postpress' ),
+					'Shadows' => __( 'Shadows Into light Two', 'postpress' ),
+					'Kalam' => __( 'Kalam', 'postpress' ),
+					'Patrick' => __( 'Patrick Hand', 'postpress' ),
+					'Neucha' => __( 'Neucha', 'postpress' ),
+					'Delius' => __( 'Delius', 'postpress' ),
+					'Delius_Caps' => __( 'Delius Swash Caps', 'postpress' ),
+					'Caveat' => __( 'Caveat Brush', 'postpress' ),
+					'Itim' => __( 'Itim', 'postpress' ),
+					'Dekko' => __( 'Dekko', 'postpress' ),
 				);
 
 	$wp_customize->add_section( 'postpress_fonts_section' , array(
 		'title'      => __( 'postpress Fonts', 'postpress' ),
 		'priority'   => '31',
-		'panel'      => 'postpress_general'
+		'panel'      => 'postpress_general',
 	) );
 	$wp_customize->add_setting( 'paragraphs_fonts' , array(
-		'default' => 'Abel',
-		'sanitize_callback'  => 'sanitize_text_field'
+		'default' => 'Covered',
+		'sanitize_callback'  => 'sanitize_text_field',
 	) );
 	$wp_customize->add_control(
 		new WP_Customize_Control(
@@ -47,12 +51,11 @@ postpress general settings
 				'section'        => 'postpress_fonts_section',
 				'settings'       => 'paragraphs_fonts',
 				'type'           => 'select',
-				'description'    => __('change the font of your paragraphs and buttons', 'postpress'),
-				'choices'        => $google_fonts
+				'description'    => __( 'change the font of your paragraphs and buttons', 'postpress' ),
+				'choices'        => $google_fonts,
 			)
 		)
 	);
-
 
 /*****************************
 postpress Social Media Icons
@@ -62,8 +65,8 @@ postpress Social Media Icons
 	$wp_customize->add_panel( 'postpress_icons_panel', array(
 		'priority'       => 9,
 		'capability'     => 'edit_theme_options',
-		'title'          => __('postpress Social Media Icons','postpress'),
-		'description'    => __('Link your website to your social media','postpress'),
+		'title'          => __( 'postpress Social Media Icons','postpress' ),
+		'description'    => __( 'Link your website to your social media','postpress' ),
 	) );
 
 	// Facebook section
@@ -80,9 +83,9 @@ postpress Social Media Icons
 		$wp_customize->add_control( 'icon1_link', array(
 				   'label'      => '',
 				   'section'    => 'postpress_icon1_section',
-				   'settings'   => 'icon1_link'
+				   'settings'   => 'icon1_link',
 			   )
-	   );
+		);
 
 	// Twitter section
 	$wp_customize->add_section( 'postpress_icon2_section' , array(
@@ -218,40 +221,60 @@ Load the fonts selected
 
 function postpress_change_google_fonts() {
 	$fonts = array(
-		'Abel' => array(
-			'name' => 'Abel',
-			'css' => 'Abel',
-			'query' => 'Abel'
+		'Covered' => array(
+			'name' => 'Covered By Your Grace',
+			'css' => 'Covered By Your Grace',
+			'query' => 'Covered+By+Your+Grace',
 		),
-		'News_Cycle' => array(
-			'name' => 'News Cycle',
-			'css' => 'News Cycle',
-			'query' => 'News+Cycle'
+		'Shadows' => array(
+			'name' => 'Shadows Into Light Two',
+			'css' => 'Shadows Into Light Two',
+			'query' => 'Shadows+Into+Light+Two',
 		),
-		'Open_Sans_Condensed' => array(
-			'name' => 'Open Sans Condensed',
-			'css' => 'Open Sans Condensed',
-			'query' => 'Open+Sans+Condensed:300,700'
+		'Kalam' => array(
+			'name' => 'Kalam',
+			'css' => 'Kalam',
+			'query' => 'Kalam',
 		),
-		'Oswald' => array(
-			'name' => 'Oswald',
-			'css' => 'Oswald',
-			'query' => 'Oswald:400,300,700'
-		),   
-		'Quicksand' => array(
-			'name' => 'Quicksand',
-			'css' => 'Quicksand',
-			'query' => 'Quicksand:400,300,700'
+		'Patrick' => array(
+			'name' => 'Patrick Hand',
+			'css' => 'Patrick Hand',
+			'query' => 'Patrick+Hand',
 		),
-		'Shadow' => array(
-			'name' => 'Shadow',
-			'css' => 'Shadows Into Light',
-			'query' => 'Shadows+Into+Light'
-		)
+		'Neucha' => array(
+			'name' => 'Neucha',
+			'css' => 'Neucha',
+			'query' => 'Neucha',
+		),
+		'Delius' => array(
+			'name' => 'Delius',
+			'css' => 'Delius',
+			'query' => 'Delius',
+		),
+		'Delius_Caps' => array(
+			'name' => 'Delius Swash Caps',
+			'css' => 'Delius Swash Caps',
+			'query' => 'Delius+Swash+Caps',
+		),
+		'Caveat' => array(
+			'name' => 'Caveat Brush',
+			'css' => 'Caveat',
+			'query' => 'Caveat+Brush',
+		),
+		'Itim' => array(
+			'name' => 'Itim',
+			'css' => 'Itim',
+			'query' => 'Itim',
+		),
+		'Dekko' => array(
+			'name' => 'Dekko',
+			'css' => 'Dekko',
+			'query' => 'Dekko',
+		),
 	);
-	$paragraphs_font = get_theme_mod('paragraphs_fonts', 'Abel'); 
+	$paragraphs_font = get_theme_mod('paragraphs_fonts', 'Covered');
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family='.$fonts[$paragraphs_font]['query']);  
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family='.$fonts[$paragraphs_font]['query']);
 
 	?>
 	<style type='text/css'>
