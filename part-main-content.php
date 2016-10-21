@@ -66,9 +66,9 @@ if ( $numpages > 1 ) {
 	}
 } ?>
 	<div class="card-footer">
-		<small class="postmetadata"><i class="fa fa-folder-open-o"></i> <?php esc_html_e( 'Posted in', 'postpress' ); ?> <?php the_category( ', ' ); ?></small><br>
+		<small class="postmetadata text-muted"><i class="fa fa-folder-open-o"></i> <?php esc_html_e( 'Posted in', 'postpress' ); ?> <?php the_category( ', ' ); ?></small><br>
 			<?php if ( has_tag() ) { ?>
-					<small><i class="fa fa-tags"></i> <?php the_tags(); ?></small><br>
+					<small class="postmetadata text-muted"><i class="fa fa-tags"></i> <?php the_tags(); ?></small><br>
 			<?php } ?>
 	</div>
 </article>

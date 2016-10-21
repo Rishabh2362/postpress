@@ -1,3 +1,9 @@
+header{
+	&#intro{
+		background-color: white;
+	}
+}
+
 aside{ //make sure input texts in sidebars do not push content
   input[type="text"]{
     max-width: 140px;

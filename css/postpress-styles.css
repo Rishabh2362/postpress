@@ -9690,6 +9690,10 @@ aside .current-cat a:hover i:before {
   }
 }
 
+header#intro {
+  background-color: white;
+}
+
 aside input[type="text"] {
   max-width: 140px;
 }
@@ -9776,6 +9780,7 @@ nav .nav-pills > li, nav aside ul > li, aside nav ul > li {
 
 #top-widgets {
   margin-bottom: 1rem;
+  max-width: 672px;
 }
 
 /**
@@ -9820,6 +9825,10 @@ nav .nav-pills > li, nav aside ul > li, aside nav ul > li {
   z-index: 100000;
 }
 
+body {
+  background-color: #e0e0e0;
+}
+
 .img-responsive, #list-posts article img, #list-posts article .wp-caption {
   max-width: 100%;
   height: auto;
@@ -9837,6 +9846,10 @@ input.submit {
 
 #list-posts {
   max-width: 672px;
+}
+
+#list-posts article .card-title a:hover {
+  text-decoration: none;
 }
 
 #list-posts article .card-img-overlay {

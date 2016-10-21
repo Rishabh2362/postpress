@@ -26,7 +26,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <meta name="description" content="PostPress - Your WordPress Made Social">
-    <meta name="author" content="Jeff Marx, Isabelle Garcia">
+    <meta name="author" content="Isabelle Garcia">
     <link rel="icon" href="../../favicon.ico">
 
     <?php wp_head(); ?> 

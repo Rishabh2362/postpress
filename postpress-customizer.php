@@ -7,9 +7,9 @@
 
 function postpress_customize_register( $wp_customize ) {
 
-/*****************************
-postpress general settings
-******************************/
+	/*****************************
+	postpress general settings
+	******************************/
 
 	//general settings panel
 	$wp_customize->add_panel( 'postpress_general', array(
@@ -36,10 +36,11 @@ postpress general settings
 						'label'          => __( 'Change the colors of your theme', 'postpress' ),
 						'section'        => 'postpress_colors_section',
 						'settings'       => 'css_sheet',
-						'type'           => 'radio',
+						'type'           => 'select',
 						'choices'        => array(
 							'default' 		=> __( 'Default', 'postpress' ),
 							'yellow' 	=> __( 'Yellow', 'postpress' ),
+							'pink' 	=> __( 'Pink', 'postpress' ),
 						),
 				)
 			)
@@ -49,17 +50,17 @@ postpress general settings
 
 	//Prepare the array of fonts to select from
 	$google_fonts = array(
-					'Covered' => __( 'Covered By Your Grace', 'postpress' ),
-					'Shadows' => __( 'Shadows Into light Two', 'postpress' ),
-					'Kalam' => __( 'Kalam', 'postpress' ),
-					'Patrick' => __( 'Patrick Hand', 'postpress' ),
-					'Neucha' => __( 'Neucha', 'postpress' ),
-					'Delius' => __( 'Delius', 'postpress' ),
-					'Delius_Caps' => __( 'Delius Swash Caps', 'postpress' ),
-					'Caveat' => __( 'Caveat Brush', 'postpress' ),
-					'Itim' => __( 'Itim', 'postpress' ),
-					'Dekko' => __( 'Dekko', 'postpress' ),
-				);
+		'Covered' => __( 'Covered By Your Grace', 'postpress' ),
+		'Shadows' => __( 'Shadows Into light Two', 'postpress' ),
+		'Kalam' => __( 'Kalam', 'postpress' ),
+		'Patrick' => __( 'Patrick Hand', 'postpress' ),
+		'Neucha' => __( 'Neucha', 'postpress' ),
+		'Delius' => __( 'Delius', 'postpress' ),
+		'Delius_Caps' => __( 'Delius Swash Caps', 'postpress' ),
+		'Caveat' => __( 'Caveat Brush', 'postpress' ),
+		'Itim' => __( 'Itim', 'postpress' ),
+		'Dekko' => __( 'Dekko', 'postpress' ),
+	);
 
 	$wp_customize->add_section( 'postpress_fonts_section' , array(
 		'title'      => __( 'postpress Fonts', 'postpress' ),
@@ -83,33 +84,9 @@ postpress general settings
 		)
 	);
 
-/*****************************
-PostPress Social General Settings
-Load css selected
-******************************/
-function postpress_load_css_colors() {
-		$css = array(
-				'default' => array(
-						'name' => 'default',
-						'title' => __( 'default', 'postpress' ),
-						'file' => 'default.css',
-				),
-				'yellow' => array(
-						'name' => 'yellow',
-						'title' => __( 'yellow', 'postpress' ),
-						'file' => 'yellow.css',
-				),
-		);
-		$css_id = get_theme_mod( 'css_sheet', 'default' );
-		wp_enqueue_style( $css[ $css_id ]['file'], get_template_directory_uri().'/css/colors/'.$css[ $css_id ]['file'] );
-
-}
-add_action( 'wp_head', 'postpress_load_css_colors' );
-
-
-/*****************************
-postpress Social Media Icons
-******************************/        
+	/*****************************
+	postpress Social Media Icons
+	******************************/
 
 	// Icons settings panel
 	$wp_customize->add_panel( 'postpress_icons_panel', array(
@@ -123,151 +100,146 @@ postpress Social Media Icons
 	$wp_customize->add_section( 'postpress_icon1_section' , array(
 		'title'      => __( 'Facebook', 'postpress' ),
 		'priority'   => '1',
-		'panel'      => 'postpress_icons_panel'
+		'panel'      => 'postpress_icons_panel',
 	) );
-		// icon 1
-		$wp_customize->add_setting( 'icon1_link' , array(
-			'default' => '',
-			'sanitize_callback' => 'postpress_sanitize_url'
-		) );
-		$wp_customize->add_control( 'icon1_link', array(
-				   'label'      => '',
-				   'section'    => 'postpress_icon1_section',
-				   'settings'   => 'icon1_link',
-			   )
-		);
-
+	// icon 1
+	$wp_customize->add_setting( 'icon1_link' , array(
+		'default' => '',
+		'sanitize_callback' => 'postpress_sanitize_url',
+	) );
+	$wp_customize->add_control( 'icon1_link', array(
+			   'label'      => '',
+			   'section'    => 'postpress_icon1_section',
+			   'settings'   => 'icon1_link',
+		   )
+	);
 	// Twitter section
 	$wp_customize->add_section( 'postpress_icon2_section' , array(
 		'title'      => __( 'Twitter', 'postpress' ),
 		'priority'   => '2',
-		'panel'      => 'postpress_icons_panel'
+		'panel'      => 'postpress_icons_panel',
 	) );
-		// icon 2
-		$wp_customize->add_setting( 'icon2_link' , array(
-			'default' => '',
-			'sanitize_callback' => 'postpress_sanitize_url'
-		) );
-		$wp_customize->add_control( 'icon2_link', array(
-				   'label'      => '',
-				   'section'    => 'postpress_icon2_section',
-				   'settings'   => 'icon2_link'
-			   )
-	   );
-
+	// icon 2
+	$wp_customize->add_setting( 'icon2_link' , array(
+		'default' => '',
+		'sanitize_callback' => 'postpress_sanitize_url',
+	) );
+	$wp_customize->add_control( 'icon2_link', array(
+			   'label'      => '',
+			   'section'    => 'postpress_icon2_section',
+			   'settings'   => 'icon2_link',
+		   )
+	);
 	// Google+ section
 	$wp_customize->add_section( 'postpress_icon3_section' , array(
 		'title'      => __( 'Googleplus', 'postpress' ),
 		'priority'   => '3',
-		'panel'      => 'postpress_icons_panel'
+		'panel'      => 'postpress_icons_panel',
 	) );
-		// icon 3
-		$wp_customize->add_setting( 'icon3_link' , array(
-			'default' => '',
-			'sanitize_callback' => 'postpress_sanitize_url'
-		) );
-		$wp_customize->add_control( 'icon3_link', array(
-				   'label'      => '',
-				   'section'    => 'postpress_icon3_section',
-				   'settings'   => 'icon3_link'
-			   )
-	   );
-
+	// icon 3
+	$wp_customize->add_setting( 'icon3_link' , array(
+		'default' => '',
+		'sanitize_callback' => 'postpress_sanitize_url',
+	) );
+	$wp_customize->add_control( 'icon3_link', array(
+			   'label'      => '',
+			   'section'    => 'postpress_icon3_section',
+			   'settings'   => 'icon3_link',
+		   )
+	);
 	// Instagram section
 	$wp_customize->add_section( 'postpress_icon4_section' , array(
 		'title'      => __( 'Instagram', 'postpress' ),
 		'priority'   => '4',
-		'panel'      => 'postpress_icons_panel'
+		'panel'      => 'postpress_icons_panel',
 	) );
-		// icon 4
-		$wp_customize->add_setting( 'icon4_link' , array(
-			'default' => '',
-			'sanitize_callback' => 'postpress_sanitize_url'
-		) );
-		$wp_customize->add_control( 'icon4_link', array(
-				   'label'      => '',
-				   'section'    => 'postpress_icon4_section',
-				   'settings'   => 'icon4_link'
-			   )
-	   );
-
+	// icon 4
+	$wp_customize->add_setting( 'icon4_link' , array(
+		'default' => '',
+		'sanitize_callback' => 'postpress_sanitize_url',
+	) );
+	$wp_customize->add_control( 'icon4_link', array(
+			   'label'      => '',
+			   'section'    => 'postpress_icon4_section',
+			   'settings'   => 'icon4_link',
+		   )
+	);
 	// Linkedin section
 	$wp_customize->add_section( 'postpress_icon5_section' , array(
 		'title'      => __( 'Linkedin', 'postpress' ),
 		'priority'   => '5',
-		'panel'      => 'postpress_icons_panel'
+		'panel'      => 'postpress_icons_panel',
 	) );
-		// icon 5
-		$wp_customize->add_setting( 'icon5_link' , array(
-			'default' => '',
-			'sanitize_callback' => 'postpress_sanitize_url'
-		) );
-		$wp_customize->add_control( 'icon5_link', array(
-				   'label'      => '',
-				   'section'    => 'postpress_icon5_section',
-				   'settings'   => 'icon5_link'
-			   )
-	   );
-
+	// icon 5
+	$wp_customize->add_setting( 'icon5_link' , array(
+		'default' => '',
+		'sanitize_callback' => 'postpress_sanitize_url',
+	) );
+	$wp_customize->add_control( 'icon5_link', array(
+			   'label'      => '',
+			   'section'    => 'postpress_icon5_section',
+			   'settings'   => 'icon5_link',
+		   )
+	);
 	// Youtube section
 	$wp_customize->add_section( 'postpress_icon6_section' , array(
 		'title'      => __( 'Youtube', 'postpress' ),
 		'priority'   => '6',
-		'panel'      => 'postpress_icons_panel'
+		'panel'      => 'postpress_icons_panel',
 	) );
-		// icon 6
-		$wp_customize->add_setting( 'icon6_link' , array(
-			'default' => '',
-			'sanitize_callback' => 'postpress_sanitize_url'
-		) );
-		$wp_customize->add_control( 'icon6_link', array(
-				   'label'      => '',
-				   'section'    => 'postpress_icon6_section',
-				   'settings'   => 'icon6_link'
-			   )
-	   );
+	// icon 6
+	$wp_customize->add_setting( 'icon6_link' , array(
+		'default' => '',
+		'sanitize_callback' => 'postpress_sanitize_url',
+	) );
+	$wp_customize->add_control( 'icon6_link', array(
+			   'label'      => '',
+			   'section'    => 'postpress_icon6_section',
+			   'settings'   => 'icon6_link',
+		   )
+	);
 	// pinterest section
 	$wp_customize->add_section( 'postpress_icon7_section' , array(
 		'title'      => __( 'Pinterest', 'postpress' ),
 		'priority'   => '7',
-		'panel'      => 'postpress_icons_panel'
+		'panel'      => 'postpress_icons_panel',
 	) );
-		// icon 7
-		$wp_customize->add_setting( 'icon7_link' , array(
-			'default' => '',
-			'sanitize_callback' => 'postpress_sanitize_url'
-		) );
-		$wp_customize->add_control( 'icon7_link', array(
-				   'label'      => '',
-				   'section'    => 'postpress_icon7_section',
-				   'settings'   => 'icon7_link'
-			   )
-	   );
+	// icon 7
+	$wp_customize->add_setting( 'icon7_link' , array(
+		'default' => '',
+		'sanitize_callback' => 'postpress_sanitize_url',
+	) );
+	$wp_customize->add_control( 'icon7_link', array(
+			   'label'      => '',
+			   'section'    => 'postpress_icon7_section',
+			   'settings'   => 'icon7_link',
+		)
+	);
 
 	// Tumblr section
 	$wp_customize->add_section( 'postpress_icon8_section' , array(
 		'title'      => __( 'Tumblr', 'postpress' ),
 		'priority'   => '8',
-		'panel'      => 'postpress_icons_panel'
+		'panel'      => 'postpress_icons_panel',
 	) );
-		// icon 7
-		$wp_customize->add_setting( 'icon8_link' , array(
-			'default' => '',
-			'sanitize_callback' => 'postpress_sanitize_url'
-		) );
-		$wp_customize->add_control( 'icon8_link', array(
-				   'label'      => '',
-				   'section'    => 'postpress_icon8_section',
-				   'settings'   => 'icon8_link'
-			   )
-	   );
+	// icon 7
+	$wp_customize->add_setting( 'icon8_link' , array(
+		'default' => '',
+		'sanitize_callback' => 'postpress_sanitize_url',
+	) );
+	$wp_customize->add_control( 'icon8_link', array(
+			   'label'      => '',
+			   'section'    => 'postpress_icon8_section',
+			   'settings'   => 'icon8_link',
+		   )
+	);
 }
 add_action( 'customize_register', 'postpress_customize_register' );
 
 /*****************************
-postpress General Settings. 
+postpress General Settings.
 Load the fonts selected
-******************************/ 
+******************************/
 
 function postpress_change_google_fonts() {
 	$fonts = array(
@@ -322,15 +294,45 @@ function postpress_change_google_fonts() {
 			'query' => 'Dekko',
 		),
 	);
-	$paragraphs_font = get_theme_mod('paragraphs_fonts', 'Covered');
+	$paragraphs_font = get_theme_mod( 'paragraphs_fonts', 'Covered' );
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family='.$fonts[$paragraphs_font]['query']);
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family='.$fonts[ $paragraphs_font ]['query'] );
 
 	?>
 	<style type='text/css'>
-		body {font-family:<?php echo $fonts[$paragraphs_font]['css']; ?>}
+		body {font-family:<?php echo esc_html( $fonts[ $paragraphs_font ]['css'] ); ?>}
 	</style>
 	<?php
 }
-add_action( 'wp_head', 'postpress_change_google_fonts');
+add_action( 'wp_head', 'postpress_change_google_fonts' );
+
+
+/*****************************
+PostPress Social General Settings
+Load css selected
+******************************/
+function postpress_load_css_colors() {
+	$css = array(
+		'default' => array(
+				'name' => 'default',
+				'title' => __( 'default', 'postpress' ),
+				'file' => 'default.css',
+		),
+		'yellow' => array(
+				'name' => 'yellow',
+				'title' => __( 'yellow', 'postpress' ),
+				'file' => 'yellow.css',
+		),
+		'pink' => array(
+				'name' => 'pink',
+				'title' => __( 'pink', 'postpress' ),
+				'file' => 'pink.css',
+		),
+	);
+	$css_id = get_theme_mod( 'css_sheet', 'default' );
+	wp_enqueue_style( $css[ $css_id ]['file'], get_template_directory_uri().'/css/colors/'.$css[ $css_id ]['file'] );
+
+}
+add_action( 'wp_head', 'postpress_load_css_colors' );
+
 ?>

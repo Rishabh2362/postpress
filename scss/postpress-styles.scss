@@ -6,7 +6,7 @@
 @import "accessibility";
 
 body{
-	//background-color: #e0e0e0;
+	background-color: #e0e0e0;
 }
 
 .img-responsive{
@@ -38,6 +38,9 @@ input.submit{
 	article{
 		@extend .card;
 		//border: 1px solid red;
+		.card-title a:hover{
+			text-decoration: none;
+		}
 		.card-img-overlay{
 			max-height: 130px;
 		}
