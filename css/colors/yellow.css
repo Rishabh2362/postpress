@@ -1,9 +1,9 @@
 a, a:link, a:visited {
-  color: #f4b942;
+  color: #f4b942; //main color
 }
 
 a:hover, a:active{
-  color: #C1860F;
+  color: #C1860F; //20% dark
 } 
 
 .btn-primary {
@@ -12,7 +12,7 @@ a:hover, a:active{
 }
 
 .btn-primary:hover {
-  background-color: #DBA029;
+  background-color: #DBA029; //10% dark
   border-color: #C1860F;
 }
 
@@ -89,7 +89,7 @@ a:hover, a:active{
 .open > .btn-outline-primary.dropdown-toggle:focus,
 .open > .btn-outline-primary.dropdown-toggle.focus {
   background-color: #C1860F;
-  border-color: #A86D00;
+  border-color: #A86D00; //30% dark
 }
 
 .btn-outline-primary.disabled:focus,
@@ -137,7 +137,7 @@ aside ul .nav-item.open li a:focus, aside ul li .nav-item.open a:focus, .nav-pil
 
 .card-primary .card-title a:hover, #list-posts article.sticky .card-title a:hover,
 .card-primary .text-muted, #list-posts article.sticky .text-muted{
-  color: #753A00 !important; //50%
+  color: #753A00 !important; //50% dark
 }
 
 .card-inverse .card-link, #list-posts article.sticky .card-link, .card-inverse .card-text, #list-posts article.sticky .card-text, #list-posts article.sticky p, #list-posts article.sticky small, .card-inverse .card-subtitle, #list-posts article.sticky .card-subtitle, .card-inverse .card-blockquote .blockquote-footer, #list-posts article.sticky .card-blockquote .blockquote-footer,
@@ -181,7 +181,7 @@ aside ul .nav-item.open li a:focus, aside ul li .nav-item.open a:focus, .nav-pil
 .list-group-item.active .list-group-item-text,
 .list-group-item.active:focus .list-group-item-text,
 .list-group-item.active:hover .list-group-item-text {
-  color: #a8d6fe;
+  color: #FFEC75; //20% lighter
 }
 
 .bg-primary {
