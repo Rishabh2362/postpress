@@ -39,8 +39,19 @@ function postpress_customize_register( $wp_customize ) {
 						'type'           => 'select',
 						'choices'        => array(
 							'default' 		=> __( 'Default', 'postpress' ),
-							'yellow' 	=> __( 'Yellow', 'postpress' ),
-							'pink' 	=> __( 'Pink', 'postpress' ),
+							'gold' 			=> __( 'gold', 'postpress' ),
+							'bubblegum' 	=> __( 'bubblegum', 'postpress' ),
+							'pinky' 		=> __( 'pinky', 'postpress' ),
+							'plum' 			=> __( 'plum', 'postpress' ),
+							'ruby' 			=> __( 'ruby', 'postpress' ),
+							'pumpkin' 		=> __( 'pumpkin', 'postpress' ),
+							'lime' 			=> __( 'lime', 'postpress' ),
+							'apple' 		=> __( 'apple', 'postpress' ),
+							'sky' 			=> __( 'sky', 'postpress' ),
+							'navy' 			=> __( 'navy', 'postpress' ),
+							'gray' 			=> __( 'gray', 'postpress' ),
+							'cocoa' 		=> __( 'cocoa', 'postpress' ),
+							'black' 		=> __( 'black', 'postpress' ),
 						),
 				)
 			)
@@ -314,19 +325,46 @@ Load css selected
 function postpress_load_css_colors() {
 	$css = array(
 		'default' => array(
-				'name' => 'default',
-				'title' => __( 'default', 'postpress' ),
-				'file' => 'default.css',
+			'file' => 'default.css',
 		),
-		'yellow' => array(
-				'name' => 'yellow',
-				'title' => __( 'yellow', 'postpress' ),
-				'file' => 'yellow.css',
+		'gold' => array(
+			'file' => 'gold.css',
 		),
-		'pink' => array(
-				'name' => 'pink',
-				'title' => __( 'pink', 'postpress' ),
-				'file' => 'pink.css',
+		'bubblegum' => array(
+			'file' => 'bubblegum.css',
+		),
+		'pinky' => array(
+			'file' => 'pinky.css',
+		),
+		'plum' => array(
+			'file' => 'plum.css',
+		),
+		'ruby' => array(
+			'file' => 'ruby.css',
+		),
+		'pumpkin' => array(
+			'file' => 'pumpkin.css',
+		),
+		'lime' => array(
+			'file' => 'lime.css',
+		),
+		'apple' => array(
+			'file' => 'apple.css',
+		),
+		'sky' => array(
+			'file' => 'sky.css',
+		),
+		'navy' => array(
+			'file' => 'navy.css',
+		),
+		'gray' => array(
+			'file' => 'gray.css',
+		),
+		'cocoa' => array(
+			'file' => 'cocoa.css',
+		),
+		'black' => array(
+			'file' => 'black.css',
 		),
 	);
 	$css_id = get_theme_mod( 'css_sheet', 'default' );

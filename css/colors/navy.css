@@ -1,33 +1,37 @@
+//http://www.cssfontstack.com/oldsites/hexcolortool/
 a {
-  color: pink;
+  color: #454e5f; //main color
 }
 
+a:link, a:visited {
+  color: #454e5f; //main color
+}
+
+a:hover, a:active{
+  color: #121B2C; //20% dark
+} 
+
 .btn-primary {
-  color: #fff;
-  background-color: pink;
-  border-color: pink;
+  background-color: #454e5f;
+  border-color: #454e5f;
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background-color: #025aa5;
-  border-color: #01549b;
+  background-color: #2C3546; //10% dark
+  border-color: #121B2C;
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
-  color: #fff;
-  background-color: #025aa5;
-  border-color: #01549b;
+  background-color: #2C3546;
+  border-color: #121B2C;
 }
 
 .btn-primary:active,
 .btn-primary.active,
 .open > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #025aa5;
-  border-color: #01549b;
-  background-image: none;
+  background-color: #2C3546;
+  border-color: #121B2C;
 }
 
 .btn-primary:active:hover,
@@ -39,51 +43,45 @@ a {
 .open > .btn-primary.dropdown-toggle:hover,
 .open > .btn-primary.dropdown-toggle:focus,
 .open > .btn-primary.dropdown-toggle.focus {
-  color: #fff;
-  background-color: #014682;
-  border-color: #01315a;
+  background-color: #121B2C;
+  border-color: #000213;
 }
 
 .btn-primary.disabled:focus,
 .btn-primary.disabled.focus,
 .btn-primary:disabled:focus,
 .btn-primary:disabled.focus {
-  background-color: pink;
-  border-color: pink;
+  background-color: #454e5f;
+  border-color: #454e5f;
 }
 
 .btn-primary.disabled:hover,
 .btn-primary:disabled:hover {
-  background-color: pink;
-  border-color: pink;
+  background-color: #454e5f;
+  border-color: #454e5f;
 }
 
 .btn-outline-primary {
-  color: pink;
-  background-image: none;
-  background-color: transparent;
-  border-color: pink;
+  color: #454e5f;
+  border-color: #454e5f;
 }
 
 .btn-outline-primary:hover {
-  color: #fff;
-  background-color: pink;
-  border-color: pink;
+  background-color: #454e5f;
+  border-color: #454e5f;
 }
 
 .btn-outline-primary:focus,
 .btn-outline-primary.focus {
-  color: #fff;
-  background-color: pink;
-  border-color: pink;
+  background-color: #454e5f;
+  border-color: #454e5f;
 }
 
 .btn-outline-primary:active,
 .btn-outline-primary.active,
 .open > .btn-outline-primary.dropdown-toggle {
-  color: #fff;
-  background-color: pink;
-  border-color: pink;
+  background-color: #454e5f;
+  border-color: #454e5f;
 }
 
 .btn-outline-primary:active:hover,
@@ -95,36 +93,30 @@ a {
 .open > .btn-outline-primary.dropdown-toggle:hover,
 .open > .btn-outline-primary.dropdown-toggle:focus,
 .open > .btn-outline-primary.dropdown-toggle.focus {
-  color: #fff;
-  background-color: #014682;
-  border-color: #01315a;
+  background-color: #121B2C;
+  border-color: #000213; //30% dark
 }
 
 .btn-outline-primary.disabled:focus,
 .btn-outline-primary.disabled.focus,
 .btn-outline-primary:disabled:focus,
 .btn-outline-primary:disabled.focus {
-  border-color: #43a7fd;
+  border-color: #788192; //%20 lighter
 }
 
 .btn-outline-primary.disabled:hover,
 .btn-outline-primary:disabled:hover {
-  border-color: #43a7fd;
+  border-color: #FF8AD1;
 }
 
 .btn-link {
-  font-weight: normal;
-  color: pink;
-  border-radius: 0;
+  color: #454e5f;
 }
 
 .dropdown-item.active,
 .dropdown-item.active:focus,
 .dropdown-item.active:hover {
-  color: #fff;
-  text-decoration: none;
-  background-color: pink;
-  outline: 0;
+  background-color: #454e5f;
 }
 
 .nav-pills .nav-link.active,
@@ -140,105 +132,104 @@ aside ul .nav-item.open li a, aside ul li .nav-item.open a, .nav-pills .nav-item
 aside ul .nav-item.open .nav-link:focus,
 .nav-pills .nav-item.open aside ul li a:focus,
 aside ul .nav-item.open li a:focus, aside ul li .nav-item.open a:focus, .nav-pills .nav-item.open .nav-link:hover, aside ul .nav-item.open .nav-link:hover, .nav-pills .nav-item.open aside ul li a:hover, aside ul .nav-item.open li a:hover, aside ul li .nav-item.open a:hover {
-  color: #fff;
-  cursor: default;
-  background-color: pink;
+  background-color: #454e5f;
 }
 
 .card-primary, #list-posts article.sticky {
-  background-color: pink;
-  border-color: pink;
+  background-color: #454e5f;
+  border-color: #454e5f;
+}
+
+.card-primary .card-title a:hover, #list-posts article.sticky .card-title a:hover,
+.card-primary .text-muted, #list-posts article.sticky .text-muted{
+  //color: #000213 !important; //50% dark
+}
+
+.card-inverse .card-link, #list-posts article.sticky .card-link, .card-inverse .card-text, #list-posts article.sticky .card-text, #list-posts article.sticky p, #list-posts article.sticky small, .card-inverse .card-subtitle, #list-posts article.sticky .card-subtitle, .card-inverse .card-blockquote .blockquote-footer, #list-posts article.sticky .card-blockquote .blockquote-footer,
+.card-inverse .card-header, #list-posts article.sticky .card-header, .card-inverse .card-footer, #list-posts article.sticky .card-footer, .card-inverse .card-title, #list-posts article.sticky .card-title, .card-inverse .card-blockquote, #list-posts article.sticky .card-blockquote,
+#list-posts article.sticky a{
+  //color: black;
 }
 
 .card-outline-primary {
-  background-color: transparent;
-  border-color: pink;
+  border-color: #454e5f;
 }
 
 .page-item.active .page-link,
 .page-item.active .page-link:focus,
 .page-item.active .page-link:hover {
-  z-index: 2;
-  color: #fff;
-  cursor: default;
-  background-color: pink;
-  border-color: pink;
+  background-color: #454e5f;
+  border-color: #454e5f;
 }
 
 .page-link {
-  position: relative;
-  float: left;
-  padding: 0.5rem 0.75rem;
-  margin-left: -1px;
-  color: pink;
-  text-decoration: none;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  color: #454e5f;
 }
 
 .tag-primary {
-  background-color: pink;
+  background-color: #454e5f;
 }
 
 .tag-primary[href]:focus,
 .tag-primary[href]:hover {
-  background-color: #025aa5;
+  background-color: #2C3546;
 }
 
 
 .list-group-item.active,
 .list-group-item.active:focus,
 .list-group-item.active:hover {
-  z-index: 2;
-  color: #fff;
-  text-decoration: none;
-  background-color: pink;
-  border-color: pink;
+  background-color: #454e5f;
+  border-color: #454e5f;
 }
 
 .list-group-item.active .list-group-item-text,
 .list-group-item.active:focus .list-group-item-text,
 .list-group-item.active:hover .list-group-item-text {
-  color: #a8d6fe;
+  color: #788192; //20% lighter
 }
 
 .bg-primary {
-  background-color: pink !important;
+  background-color: #454e5f !important;
 }
 
 a.bg-primary:focus,
 a.bg-primary:hover {
-  background-color: #025aa5 !important;
+  background-color: #2C3546 !important;
 }
 
 .text-primary {
-  color: pink !important;
+  color: #454e5f !important;
 }
 
 a.text-primary:focus,
 a.text-primary:hover {
-  color: #025aa5 !important;
+  color: #2C3546 !important;
 }
 
 #list-posts article.sticky .card-footer {
-  background-color: #108ffd;
-  border-top: 1px solid pink;
+  background-color: #5F6879; /*10% lighter*/
+  border-top: 1px solid #454e5f !important;
+}
+
+.form-control:focus, input:focus, textarea:focus {
+  border-color: #454e5f;
 }
 
 /************* wp-core.less */
 /* TODO: Find out and style these classes*/
 .bypostauthor {
-  color: pink;
+  color: #454e5f;
 }
 
 .wp-caption {
-  color: pink;
+  color: #454e5f;
 }
 
 .wp-caption-text {
-  color: pink;
+  color: #454e5f;
 }
 
 .gallery-caption {
-  color: pink;
+  color: #454e5f;
 }

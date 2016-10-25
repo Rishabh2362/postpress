@@ -1,0 +1,235 @@
+//http://www.cssfontstack.com/oldsites/hexcolortool/
+a {
+  color: #f4b942; //main color
+}
+
+a:link, a:visited {
+  color: #f4b942; //main color
+}
+
+a:hover, a:active{
+  color: #C1860F; //20% dark
+} 
+
+.btn-primary {
+  background-color: #f4b942;
+  border-color: #f4b942;
+}
+
+.btn-primary:hover {
+  background-color: #DBA029; //10% dark
+  border-color: #C1860F;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  background-color: #DBA029;
+  border-color: #C1860F;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open > .btn-primary.dropdown-toggle {
+  background-color: #DBA029;
+  border-color: #C1860F;
+}
+
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.btn-primary:active.focus,
+.btn-primary.active:hover,
+.btn-primary.active:focus,
+.btn-primary.active.focus,
+.open > .btn-primary.dropdown-toggle:hover,
+.open > .btn-primary.dropdown-toggle:focus,
+.open > .btn-primary.dropdown-toggle.focus {
+  background-color: #C1860F;
+  border-color: #A86D00;
+}
+
+.btn-primary.disabled:focus,
+.btn-primary.disabled.focus,
+.btn-primary:disabled:focus,
+.btn-primary:disabled.focus {
+  background-color: #f4b942;
+  border-color: #f4b942;
+}
+
+.btn-primary.disabled:hover,
+.btn-primary:disabled:hover {
+  background-color: #f4b942;
+  border-color: #f4b942;
+}
+
+.btn-outline-primary {
+  color: #f4b942;
+  border-color: #f4b942;
+}
+
+.btn-outline-primary:hover {
+  background-color: #f4b942;
+  border-color: #f4b942;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+  background-color: #f4b942;
+  border-color: #f4b942;
+}
+
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.open > .btn-outline-primary.dropdown-toggle {
+  background-color: #f4b942;
+  border-color: #f4b942;
+}
+
+.btn-outline-primary:active:hover,
+.btn-outline-primary:active:focus,
+.btn-outline-primary:active.focus,
+.btn-outline-primary.active:hover,
+.btn-outline-primary.active:focus,
+.btn-outline-primary.active.focus,
+.open > .btn-outline-primary.dropdown-toggle:hover,
+.open > .btn-outline-primary.dropdown-toggle:focus,
+.open > .btn-outline-primary.dropdown-toggle.focus {
+  background-color: #C1860F;
+  border-color: #A86D00; //30% dark
+}
+
+.btn-outline-primary.disabled:focus,
+.btn-outline-primary.disabled.focus,
+.btn-outline-primary:disabled:focus,
+.btn-outline-primary:disabled.focus {
+  border-color: #FFEC75; //%20 lighter
+}
+
+.btn-outline-primary.disabled:hover,
+.btn-outline-primary:disabled:hover {
+  border-color: #FFEC75;
+}
+
+.btn-link {
+  color: #f4b942;
+}
+
+.dropdown-item.active,
+.dropdown-item.active:focus,
+.dropdown-item.active:hover {
+  background-color: #f4b942;
+}
+
+.nav-pills .nav-link.active,
+aside ul .nav-link.active,
+aside ul li a.active, .nav-pills .nav-link.active:focus,
+aside ul .nav-link.active:focus,
+aside ul li a.active:focus, .nav-pills .nav-link.active:hover,
+aside ul .nav-link.active:hover,
+aside ul li a.active:hover, .nav-pills .nav-item.open .nav-link,
+aside ul .nav-item.open .nav-link,
+.nav-pills .nav-item.open aside ul li a,
+aside ul .nav-item.open li a, aside ul li .nav-item.open a, .nav-pills .nav-item.open .nav-link:focus,
+aside ul .nav-item.open .nav-link:focus,
+.nav-pills .nav-item.open aside ul li a:focus,
+aside ul .nav-item.open li a:focus, aside ul li .nav-item.open a:focus, .nav-pills .nav-item.open .nav-link:hover, aside ul .nav-item.open .nav-link:hover, .nav-pills .nav-item.open aside ul li a:hover, aside ul .nav-item.open li a:hover, aside ul li .nav-item.open a:hover {
+  background-color: #f4b942;
+}
+
+.card-primary, #list-posts article.sticky {
+  background-color: #f4b942;
+  border-color: #f4b942;
+}
+
+.card-primary .card-title a:hover, #list-posts article.sticky .card-title a:hover,
+.card-primary .text-muted, #list-posts article.sticky .text-muted{
+  color: #753A00 !important; //50% dark
+}
+
+.card-inverse .card-link, #list-posts article.sticky .card-link, .card-inverse .card-text, #list-posts article.sticky .card-text, #list-posts article.sticky p, #list-posts article.sticky small, .card-inverse .card-subtitle, #list-posts article.sticky .card-subtitle, .card-inverse .card-blockquote .blockquote-footer, #list-posts article.sticky .card-blockquote .blockquote-footer,
+.card-inverse .card-header, #list-posts article.sticky .card-header, .card-inverse .card-footer, #list-posts article.sticky .card-footer, .card-inverse .card-title, #list-posts article.sticky .card-title, .card-inverse .card-blockquote, #list-posts article.sticky .card-blockquote,
+#list-posts article.sticky a{
+  color: black;
+}
+
+.card-outline-primary {
+  border-color: #f4b942;
+}
+
+.page-item.active .page-link,
+.page-item.active .page-link:focus,
+.page-item.active .page-link:hover {
+  background-color: #f4b942;
+  border-color: #f4b942;
+}
+
+.page-link {
+  color: #f4b942;
+}
+
+.tag-primary {
+  background-color: #f4b942;
+}
+
+.tag-primary[href]:focus,
+.tag-primary[href]:hover {
+  background-color: #DBA029;
+}
+
+
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+  background-color: #f4b942;
+  border-color: #f4b942;
+}
+
+.list-group-item.active .list-group-item-text,
+.list-group-item.active:focus .list-group-item-text,
+.list-group-item.active:hover .list-group-item-text {
+  color: #FFEC75; //20% lighter
+}
+
+.bg-primary {
+  background-color: #f4b942 !important;
+}
+
+a.bg-primary:focus,
+a.bg-primary:hover {
+  background-color: #DBA029 !important;
+}
+
+.text-primary {
+  color: #f4b942 !important;
+}
+
+a.text-primary:focus,
+a.text-primary:hover {
+  color: #DBA029 !important;
+}
+
+#list-posts article.sticky .card-footer {
+  background-color: #FFD35C;
+  border-top: 1px solid #f4b942;
+}
+
+.form-control:focus, input:focus, textarea:focus {
+  border-color: #f4b942;
+}
+
+/************* wp-core.less */
+/* TODO: Find out and style these classes*/
+.bypostauthor {
+  color: #f4b942;
+}
+
+.wp-caption {
+  color: #f4b942;
+}
+
+.wp-caption-text {
+  color: #f4b942;
+}
+
+.gallery-caption {
+  color: #f4b942;
+}

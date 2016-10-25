@@ -101,6 +101,16 @@ add_theme_support( 'infinite-scroll', array(
 */
 /* TODO: http://code.tutsplus.com/tutorials/how-to-create-infinite-scroll-pagination--wp-24873 */
 
+/*
+ * Enqueue scripts for comments.
+ */
+function postpress_enqueue_comment_reply() {
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'postpress_enqueue_comment_reply' );
+
 /*****************************
 WP Theme Check Recommendations
 ******************************/
@@ -125,6 +135,12 @@ function postpress_add_editor_styles() {
 	add_editor_style( 'css/custom-editor-style.css' );
 }
 add_action( 'after_setup_theme', 'postpress_add_editor_styles' );
+
+/*
+ * Set up the content width value based on the theme's design.
+ */
+
+if ( ! isset( $content_width ) ) $content_width = 900;
 
 /* END WP Theme Check Recommendations */
 
