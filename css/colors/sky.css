@@ -1,4 +1,3 @@
-//http://www.cssfontstack.com/oldsites/hexcolortool/
 a {
   color: #93d5ed; //main color
 }
@@ -10,6 +9,10 @@ a:link, a:visited {
 a:hover, a:active{
   color: #60A2BA; //20% dark
 } 
+
+body {
+    background-color: #f7f7f7;
+}
 
 .btn-primary {
   background-color: #93d5ed;
