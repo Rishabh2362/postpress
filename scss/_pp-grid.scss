@@ -1,52 +1,54 @@
 /*
 @media (min-width: 62em){
 	#intro {
-	  	//margin-top: 2rem;
-	    position: fixed;
-	    width: 25%;
-	    left: 0;
-	    padding-top: 1rem;
-	    //overflow-y: scroll; 
+			//margin-top: 2rem;
+			position: fixed;
+			width: 25%;
+			left: 0;
+			padding-top: 1rem;
+			//overflow-y: scroll; 
 	}
 	#main {
 		position: absolute;
-	    top: 1rem;
-	    bottom: 0;
-	    right: 0;
-	    width: 75%;
-	    //overflow-y: scroll;
+			top: 1rem;
+			bottom: 0;
+			right: 0;
+			width: 75%;
+			//overflow-y: scroll;
 	}
  }*/
+#main{
+	padding-top: 1em;
+}
 
+@media (min-width: 62em){
+	body, html{
+		overflow-y: hidden;
+	}
+	#intro {
+		padding-top: 2rem;
+		position: absolute;
+		top: 0px;
+		bottom: 0;
+		left: 0;
+		width: 25%;
+		//overflow-y: scroll; 
+	}
+	#intro:hover {
+		overflow-y: auto; 
+	}
 
- @media (min-width: 62em){
- body, html{
- 	overflow-y: hidden;
- }
-  #intro {
-  	padding-top: 2rem;
-    position: absolute;
-    top: 0px;
-    bottom: 0;
-    left: 0;
-    width: 25%;
-    //overflow-y: scroll; 
-  }
-  #intro:hover {
-    overflow-y: auto; 
-  }
+	#main {
+		position: absolute;
+		padding-top: 2rem;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 75%;
+		//border: 1px solid red;
+	}
 
-  #main {
-    position: absolute;
-    padding-top: 2rem;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 75%;
-    //border: 1px solid red;
-  }
-
-  #main {
-    overflow-y: auto;
-  }
+	#main {
+		overflow-y: auto;
+	}
 }
