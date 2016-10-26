@@ -38,6 +38,18 @@ function postpress_setup() {
 	) );
 }
 
+/*
+ * Removes the class "tag" from the body_class array.
+ * Because it conflicts with Bootstrap 4 .tag class.
+ */ 
+add_filter( 'body_class', 'adjust_body_class' );
+function adjust_body_class( $classes ) {
+	foreach ( $classes as $key => $value ) {
+		if ( $value == 'tag' ) unset( $classes[ $key ] );
+	}
+	return $classes;
+}
+
 /**
  * Register widget areas.
  */
