@@ -48,6 +48,34 @@ input.submit{
 			@extend .img-responsive;
 			//max-width: 150px;
 		}
+		.wp-caption-text{
+			@extend small;
+		}
+		blockquote{
+			font-style: italic;
+			margin-left: 2em;
+			margin-right: 2em;
+			quotes: "\201C""\201D""\2018""\2019";
+		}
+		blockquote:before {
+		  color: #ccc;
+		  content: open-quote;
+		  font-size: 4em;
+		  line-height: 0.1em;
+		  margin-right: 0.25em;
+		  vertical-align: -0.4em;
+		}
+		blockquote:after {
+		  color: #ccc;
+		  content: close-quote;
+		  font-size: 4em;
+		  line-height: 0.1em;
+		  margin-left: 0.60em;
+		  vertical-align: -0.4em;
+		}
+		blockquote p {
+		  display: inline;
+		}
 		#navLinkPages{
 			border-top: 1px solid gray;
 			border-bottom: 1px solid gray;

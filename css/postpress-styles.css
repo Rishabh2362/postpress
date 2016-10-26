@@ -90,7 +90,7 @@ mark {
   color: #000;
 }
 
-small {
+small, #list-posts article .wp-caption-text {
   font-size: 80%;
 }
 
@@ -585,6 +585,7 @@ hr {
 }
 
 small,
+#list-posts article .wp-caption-text,
 .small {
   font-size: 80%;
   font-weight: normal;
@@ -4311,7 +4312,7 @@ aside ul li .navbar-dark .navbar-nav a.active:focus, .navbar-dark .navbar-nav .n
   margin-bottom: 0;
 }
 
-.card-text:last-child, #list-posts article.sticky p:last-child, #list-posts article.sticky small:last-child {
+.card-text:last-child, #list-posts article.sticky p:last-child, #list-posts article.sticky small:last-child, #list-posts article.sticky .wp-caption-text:last-child {
   margin-bottom: 0;
 }
 
@@ -4481,7 +4482,7 @@ aside ul li .navbar-dark .navbar-nav a.active:focus, .navbar-dark .navbar-nav .n
 #list-posts article.sticky .card-link,
 .card-inverse .card-text,
 #list-posts article.sticky .card-text,
-#list-posts article.sticky p, #list-posts article.sticky small, .card-inverse .card-subtitle,
+#list-posts article.sticky p, #list-posts article.sticky small, #list-posts article.sticky .wp-caption-text, .card-inverse .card-subtitle,
 #list-posts article.sticky .card-subtitle,
 .card-inverse .card-blockquote .blockquote-footer, #list-posts article.sticky .card-blockquote .blockquote-footer {
   color: rgba(255, 255, 255, 0.65);
@@ -5238,13 +5239,16 @@ base::-moz-progress-bar, .progress[value] {
 
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active .list-group-item-heading > small,
-.list-group-item.active .list-group-item-heading > .small,
+.list-group-item.active #list-posts article .list-group-item-heading > .wp-caption-text,
+#list-posts article .list-group-item.active .list-group-item-heading > .wp-caption-text, .list-group-item.active .list-group-item-heading > .small,
 .list-group-item.active:focus .list-group-item-heading,
 .list-group-item.active:focus .list-group-item-heading > small,
-.list-group-item.active:focus .list-group-item-heading > .small,
+.list-group-item.active:focus #list-posts article .list-group-item-heading > .wp-caption-text,
+#list-posts article .list-group-item.active:focus .list-group-item-heading > .wp-caption-text, .list-group-item.active:focus .list-group-item-heading > .small,
 .list-group-item.active:hover .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading > small,
-.list-group-item.active:hover .list-group-item-heading > .small {
+.list-group-item.active:hover #list-posts article .list-group-item-heading > .wp-caption-text,
+#list-posts article .list-group-item.active:hover .list-group-item-heading > .wp-caption-text, .list-group-item.active:hover .list-group-item-heading > .small {
   color: inherit;
 }
 
@@ -9860,13 +9864,42 @@ input.submit {
   max-height: 130px;
 }
 
+#list-posts article blockquote {
+  font-style: italic;
+  margin-left: 2em;
+  margin-right: 2em;
+  quotes: "“" "”" "‘" "’";
+}
+
+#list-posts article blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+#list-posts article blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.60em;
+  vertical-align: -0.4em;
+}
+
+#list-posts article blockquote p {
+  display: inline;
+}
+
 #list-posts article #navLinkPages {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
   margin-bottom: 1rem;
 }
 
-#list-posts article #navLinkPages small {
+#list-posts article #navLinkPages small, #list-posts article #navLinkPages .wp-caption-text {
   font-size: 1rem;
 }
 
