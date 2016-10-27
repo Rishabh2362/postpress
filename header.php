@@ -50,8 +50,8 @@
 							<img src="<?php header_image(); ?>" alt="<?php esc_attr_e( 'Logo', 'postpress' ); ?>" id='logo' />
 						</a>
 					<?php } else { ?>
-						<h1><a href="<?php echo esc_url(home_url()); ?>">PostPress</a></h1>
-						<p class="lead">Your WordPress Made Social</p>
+						<h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+						<p class="lead"><?php bloginfo( 'description' ); ?></p>
 					<?php } ?>
 				</div>
 				<hr>
