@@ -9670,6 +9670,10 @@ aside .current-cat a:hover i:before {
   padding-top: 1em;
 }
 
+#intro {
+  padding-top: 1em;
+}
+
 @media (min-width: 62em) {
   body, html {
     overflow-y: hidden;
