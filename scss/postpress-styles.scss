@@ -76,6 +76,21 @@ input.submit{
 		blockquote p {
 		  display: inline;
 		}
+		table{
+			tr{
+				th, td{
+					padding-top: 0.5em;
+					padding-bottom: 0.5em;
+				}
+				th{
+					border-bottom: 2px solid gray;
+				}
+				td{
+					border-bottom: 1px solid gray;
+				}
+			}
+			margin-bottom: 1em;
+		}
 		#navLinkPages{
 			border-top: 1px solid gray;
 			border-bottom: 1px solid gray;
@@ -121,8 +136,6 @@ input.submit{
 		}
 	}
 }
-
-
 
 .card img.wp-post-image{
   //TODO better

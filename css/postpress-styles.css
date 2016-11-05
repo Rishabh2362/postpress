@@ -9901,6 +9901,23 @@ input.submit {
   display: inline;
 }
 
+#list-posts article table {
+  margin-bottom: 1em;
+}
+
+#list-posts article table tr th, #list-posts article table tr td {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+#list-posts article table tr th {
+  border-bottom: 2px solid gray;
+}
+
+#list-posts article table tr td {
+  border-bottom: 1px solid gray;
+}
+
 #list-posts article #navLinkPages {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
