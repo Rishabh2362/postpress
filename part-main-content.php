@@ -119,6 +119,20 @@ if ( $prev_link || $next_link ) { ?>
 
 <!-- No post found -->           
 <?php else : ?>
-	<h2 class="center"><?php esc_html_e( 'Not Found','postpress' ); ?></h2>
-	<p class="center"><?php esc_html_e( "Sorry, but you are looking for something that isn't here.", 'postpress' ); ?></p>
+	<article class="sticky"> 
+		<div class="card-header">
+			<h4 class="card-title"><?php esc_html_e( 'Sorry...','postpress' ); ?></h4>
+			<h6 class="card-subtitle text-muted"><i class="fa fa-exclamation-circle"></i> <?php esc_html_e( 'Looks like something went wrong','postpress' ); ?> </h6>
+		</div>
+		<div class="card-block">
+			<p>
+			<?php esc_html_e( "You can return to our homepage, use our main menu to perform a new search. If you problem is persists, contact with an administrator of the site.", 'postpress' ); ?>
+			</p>
+		</div>
+		<div class="card-footer">
+		    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="card-link"><?php esc_html_e( 'Back to Homepage','postpress' ); ?></a>
+		</div>
+	</article>
+	
+	
 <?php endif; ?>
