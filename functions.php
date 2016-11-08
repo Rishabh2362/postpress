@@ -34,7 +34,6 @@ function postpress_setup() {
 	add_theme_support( 'title-tag' );
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'postpress' ),
-		'secondary' =>  __( 'Secondary Menu', 'postpress' ), // not sure about a second menu area
 	) );
 }
 
