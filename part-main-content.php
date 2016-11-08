@@ -33,6 +33,7 @@
 		</div>
 
 	<?php } else { ?>
+
 		<div class="card-block">
 			<?php the_excerpt(); ?>
 		</div>
@@ -42,58 +43,41 @@
 			<?php echo the_post_thumbnail();  ?>
 		</a>
 		<?php }  ?>
-	<?php	}
 
-/* Check if the post is divided in several pages. If so, show the pagination */
-global $numpages;
-if ( $numpages > 1 ) {
-	if ( is_single() || is_page() ) {
-		$args = array(
-			'before'           => '<nav><small>' . __( 'Pages:', 'iamsocial' ),
-			'after'            => '</small></nav>',
-			'link_before'      => '',
-			'link_after'       => '',
-			'next_or_number'   => 'number',
-			'separator'        => ' ',
-			'nextpagelink'     => __( 'Next page', 'iamsocial' ),
-			'previouspagelink' => __( 'Previous page', 'iamsocial' ),
-			'pagelink'         => '%',
-			'echo'             => 1,
-		);
-		echo '<div id="navLinkPages">';
-				wp_link_pages( $args );
-		echo '</div>';
-	}
-} ?>
-	<div class="card-footer">
-		<small class="postmetadata text-muted"><i class="fa fa-folder-open-o"></i> <?php esc_html_e( 'Posted in', 'postpress' ); ?> <?php the_category( ', ' ); ?></small><br>
-			<?php if ( has_tag() ) { ?>
-					<small class="postmetadata text-muted"><i class="fa fa-tags"></i> <?php the_tags(); ?></small><br>
-			<?php } ?>
-	</div>
+	<?php	} ?>
+
+		<ul class="list-group list-group-flush">
+			<?php 
+			/* Check if the post is divided in several pages. If so, show the pagination */
+			global $numpages;
+			if ( $numpages > 1 ) {
+				if ( is_single() || is_page() ) {
+					$args = array(
+						'before'           => '<li class="list-group-item bottom_numpage"><small>' . __( 'Pages:', 'postpress' ),
+						'after'            => '</small></li>',
+						'link_before'      => '',
+						'link_after'       => '',
+						'next_or_number'   => 'number',
+						'separator'        => ' ',
+						'nextpagelink'     => __( 'Next page', 'postpress' ),
+						'previouspagelink' => __( 'Previous page', 'postpress' ),
+						'pagelink'         => '%',
+						'echo'             => 1,
+					);
+					wp_link_pages( $args );
+				}
+			} ?>
+		</ul>
+
+		<div class="card-footer">
+			<small class="postmetadata text-muted"><i class="fa fa-folder-open-o"></i> <?php esc_html_e( 'Posted in', 'postpress' ); ?> <?php the_category( ', ' ); ?></small><br>
+				<?php if ( has_tag() ) { ?>
+						<small class="postmetadata text-muted"><i class="fa fa-tags"></i> <?php the_tags(); ?></small><br>
+				<?php } ?>
+		</div>
+
 </article>
 <?php
-/* Check if the post is divided in several pages. If so, show the pagination */
-global $numpages;
-if ( $numpages > 1 ) {
-	if ( is_single() || is_page() ) {
-		$args = array(
-			'before'           => '<nav><small>' . __( 'Pages:', 'iamsocial' ),
-			'after'            => '</small></nav>',
-			'link_before'      => '',
-			'link_after'       => '',
-			'next_or_number'   => 'number',
-			'separator'        => ' ',
-			'nextpagelink'     => __( 'Next page', 'iamsocial' ),
-			'previouspagelink' => __( 'Previous page', 'iamsocial' ),
-			'pagelink'         => '%',
-			'echo'             => 1,
-		);
-		echo '<article>';
-				wp_link_pages( $args );
-		echo '</article>';
-	}
-}
 comments_template();
 endwhile; ?> 
 

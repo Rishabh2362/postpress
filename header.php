@@ -30,9 +30,6 @@
 		<link rel="icon" href="../../favicon.ico">
 
 		<?php wp_head(); ?> 
-
-		<!-- TODO: add to functions.php and load from theme css folder 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
  
 	</head>
 

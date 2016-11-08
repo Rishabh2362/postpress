@@ -99,6 +99,13 @@ input.submit{
 				font-size: 1rem;
 			}
 		}
+		.list-group-item{
+			padding-bottom: 0.2em;
+			padding-top: 0.2em;
+			&.bottom_numpage{
+				border-bottom: 0px solid transparent;
+			}
+		}
 		&.sticky{
 			@extend .card-inverse;
 			@extend .card-primary;
@@ -123,9 +130,20 @@ input.submit{
 		article{
 			@extend .card;
 			@extend .card-block;
-			.reply{
-				//@extend .card-footer;
+			.comment-author{
+				margin-top: -1.25em;
+				margin-left: -1.25em;
+				margin-right: -1.25em;
+				margin-bottom: 1em;
+				@extend .card-header;
 			}
+		}
+	}
+	li.pingback {
+		list-style-type: none;
+		.comment-body{
+			@extend .card;
+			@extend .card-block;
 		}
 	}
 	#respond{
