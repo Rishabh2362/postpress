@@ -3566,7 +3566,7 @@ nav .nav-pills > li, nav aside ul > li, aside nav ul > li { border-bottom: 1px s
 
 #extras a { margin: 0 0.2rem 0 0; }
 
-#top-widgets { margin-bottom: 1rem; max-width: 672px; }
+#top-widgets { margin-bottom: 1rem; }
 
 /** 7.0 Accessibility */
 /* Text meant only for screen readers */
@@ -3586,8 +3586,6 @@ body { background-color: #e0e0e0; }
 .btn-toggle-menu { height: 40px; }
 
 input.submit { display: inline; float: right; max-width: 150px; }
-
-#list-posts { max-width: 672px; }
 
 #list-posts article .card-title a:hover { text-decoration: none; }
 
