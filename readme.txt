@@ -2,10 +2,10 @@
 
 Contributors: aicragellebasi
 Donate link: http://www.isabellegarcia.me/contact
-Tags: one-column, two-columns, three-columns, right-sidebar, grid-layout, custom-header, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, front-page-post-form, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, entertainment, news
+Tags: one-column, two-columns, three-columns, right-sidebar, grid-layout, custom-header, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, front-page-post-form, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, entertainment, news
 Requires at least: 3.4
-Tested up to: 0.1
-Stable tag: 0.1
+Tested up to: 1.0
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,16 +80,14 @@ https://pixabay.com/en/whiteboard-man-presentation-write-849811/
 
 == Description ==
 
-IAMSocial WordPress Theme wants to give the opportunity to small businesses owners and young entrepreneurs to create a simple, but modern looking website, and to easily connect their social media. IAMSocial is customizable, intuitive, easy to use, and responsive. It includes features that extend WordPress capabilities: users can create their own slider and choose from sets of colors and fonts to customize their design. IAMSocial supports internationalization and RTL formats and respects web standards and accessibility.
+A Post-it! looking like blog. Choose among 14 colors combinations and 10 handwriting like Google fonts to match your brand directly from the WordPress customize menu. Set up posts as "Sticky" and get them to stay on the top and stand out with colors. This responsive theme is ideal for blogs, entertainement or news websites. It is accessibility ready and supports RTL formats.
 
 A few notes about the sections above:
 
 * Responsive Layout
 * Custom Colors
 * Custom Header
-* Custom Slider
 * Social Links
-* Custom footer
 * Page templates
 * Internationalization
 * RTL support
@@ -111,14 +109,10 @@ This theme is built upon Bootstrap 3.
 == Customization ==
 
 * Under “Appearance/Customize” you can set up the slider for your homepage, change the colors and the fonts for your theme look and feel and add your social media in the top navigation bar.
-	1. IAMSocial General Settings: Change your colors and your fonts.
-	2. IAMSocial Slider: Upload three images for your slider, set up its legends, colors and links (Note: Do not input the 'http://' part for the links). Choose an image from your computer (recommended size: 960px x 345px ). 
-	3. IAMSocial Social Media Icons: Link your social media accounts. Note: Do not input the 'http://' part.
+	1. PostPress General Settings: Change your colors and your fonts.
+	2. PostPress Social Media Icons: Link your social media accounts. Note: Do not input the 'http://' part.
 * Configure your widgets: 
-	1. Configure the Top bar widgets: Ideal for search bar or Custom menu. Note: It is recommended to use only one widget in this area. If you do not set up any widgets in this area, by defaut, the search bar will show.
-	2. Configure your sidebar: Add widgets here and these will appear on the side of any default page or post. Ideal for listing pages, archives or recent posts. 
-	3. Use the three footer areas (left, center and right) to drag the widgets of your choice.
-* Choose form two page templates: When creating a new page, choose your template under Page Attribute:
-	1. Default template (with sidebar)
-	2. Full width page (without sidebar)
+	1. Configure the Top bar widgets: Ideal for search bar. Note: It is recommended to use only one widget in this area. By defaut, this widget area is empty.
+	2. Configure your Primary Sidebar: The primary menu is shown in this widget area. Add any widgets of your choice below. 
+	3. Configure your Secondary Sidebar: Add any widgets of your choice below.
 
