@@ -39,6 +39,11 @@ aside{ //make sure input texts in sidebars do not push content
 			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 		}
 	}
+	small{
+		&#credits{ 
+			padding-bottom: 2em;
+		}
+	}
 }
 
 
