@@ -27,7 +27,6 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<meta name="description" content="PostPress - Your WordPress Made Social">
 		<meta name="author" content="Isabelle Garcia">
-		<link rel="icon" href="../../favicon.ico">
 
 		<?php wp_head(); ?> 
  

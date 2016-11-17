@@ -1,15 +1,15 @@
-=== PostPress - Your WordPress Made Social ===
+=== PostPress - Just Post it! ===
 
-Contributors: aicragellebasi, Jeff Marx
+Contributors: aicragellebasi
 Donate link: http://www.isabellegarcia.me/contact
-Tags: blue, gray, orange, purple, white, brown, green, two-columns, one-column, left-sidebar, fixed-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, rtl-language-support, sticky-post, threaded-comments, translation-ready, theme-options
+Tags: one-column, two-columns, three-columns, right-sidebar, grid-layout, custom-header, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, front-page-post-form, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, entertainment, news
 Requires at least: 3.4
 Tested up to: 0.1
 Stable tag: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-IAMSocial Wordpress theme that wants to give the opportunity to small businesses owners to create a simple, but modern looking website. 
+You have an idea, a note, a comment... Just post it onto PostPress!
 
 == LICENSES ==
 
@@ -28,10 +28,6 @@ http://code.google.com/p/html5shiv/
 Font Awesome, copyright Dave Gandy
 Licensed under the terms of MIT license
 http://fortawesome.github.io/Font-Awesome/
-
-Bootstrap navwalker, copyright twittem
-Licensed under the terms of GNU General Public license
-https://github.com/twittem/wp-bootstrap-navwalker
 
 Bootstrap rtl, copyright Morteza Ansarinia (http://github.com/morteza)
 Unlicensed Public Domain
