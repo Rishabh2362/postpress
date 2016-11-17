@@ -3534,6 +3534,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover { color: #1f2021 !important; }
 
 #intro { padding-top: 1em; }
 
+#credits { text-align: center; }
+
 @media (min-width: 62em) { body, html { overflow-y: hidden; }
   #intro { padding-top: 2rem; position: absolute; top: 0px; bottom: 0; left: 0; width: 25%; }
   #intro:hover { overflow-y: auto; }
@@ -3549,8 +3551,6 @@ aside .widgets { padding-bottom: 1rem; padding-top: 0.5rem; }
 aside .widgets h5 { text-transform: uppercase; }
 
 aside ul > li { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-
-aside small#credits, aside #list-posts article #credits.wp-caption-text, #list-posts article aside #credits.wp-caption-text { padding-bottom: 2em; }
 
 .nav-pills .current-menu-item .nav-link, aside ul .current-menu-item .nav-link, .nav-pills .current-menu-item aside ul li a, aside ul .current-menu-item li a, aside ul li .current-menu-item a, .nav-pills .current-menu-item .nav-link:focus, aside ul .current-menu-item .nav-link:focus, .nav-pills .current-menu-item aside ul li a:focus, aside ul .current-menu-item li a:focus, aside ul li .current-menu-item a:focus, .nav-pills .current-menu-item .nav-link:hover, aside ul .current-menu-item .nav-link:hover, .nav-pills .current-menu-item aside ul li a:hover, aside ul .current-menu-item li a:hover, aside ul li .current-menu-item a:hover, aside .current_page_item a, aside .current_page_item a:focus, aside .current_page_item a:hover, aside .current-cat a, aside .current-cat a:focus, aside .current-cat a:hover { /*  background-color: #0275d8; color: #fff; cursor: default; border-radius: 0.25rem; //display: block;  //padding: 0.5em 1em; */ }
 
