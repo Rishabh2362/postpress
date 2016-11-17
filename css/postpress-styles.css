@@ -3544,8 +3544,6 @@ header#intro { background-color: white; }
 
 header#intro .brand h1 a { text-decoration: none; }
 
-aside input[type="text"] { max-width: 140px; }
-
 aside .widgets { padding-bottom: 1rem; padding-top: 0.5rem; }
 
 aside .widgets h5 { text-transform: uppercase; }
