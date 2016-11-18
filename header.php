@@ -26,7 +26,7 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-		<?php wp_head(); ?> 
+		<?php wp_head(); ?>
 	</head>
 
 	<body <?php body_class('antialiased'); ?>>
@@ -37,7 +37,7 @@
 
 			<!--header / main sidebar-->
 			<header class="col-lg-3" id="intro" role="navigation">
-				<div id="skip"><a href="#list-posts">Skip to Main Content</a></div>
+				<div id="skip"><a href="#list-posts"><?php esc_html_e( 'Skip to Main Content', 'postpress' ) ?></a></div>
 				<!--a href="#list-posts" class="sr-only">Skip to main content</a-->
 				<div class="brand" class="text-center">
 					<?php if ( get_header_image() ) { ?>
@@ -74,7 +74,7 @@
 				<!-- open collapsed navbar for small device and iPad vert  -->
 				<div class="hidden-lg-up btn-toggle-menu">
 					<div data-toggle="collapse" data-target="#responsive-nav" id="">
-						<a href="#" class="navbar-brand">menu</a>
+						<a href="#" class="navbar-brand"><?php esc_html_e( 'menu', 'postpress' ) ?></a>
 					</div>
 				</div>
 				<!--/collapsed content: navbar for mobiles and iPad vert.-->
