@@ -161,20 +161,30 @@ input.submit{
  	height: 100%;
 }
 
- @media (min-width: 62em){
- 	img#logo{
- 		max-width: 100%;
- 		max-height: 100%;
- 	}
- }
-
+@media (min-width: 62em){
+	img#logo{
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
 #prev-next{
 	margin-top: 1rem;
 	margin-bottom: 2rem;
 	text-align: center;
 }
-
-
+#skip a{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}	 
+#skip a:focus{
+	position:static;
+	width:auto;
+	height:auto;
+} 
  /************* wp-core.less */
 
 /* TODO: Find out and style these classes*/

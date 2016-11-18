@@ -40,6 +40,8 @@
 
 			<!--header / main sidebar-->
 			<header class="col-lg-3" id="intro">
+				<div id="skip"><a href="#list-posts">Skip to Main Content</a></div> 
+				<!--a href="#list-posts" class="sr-only">Skip to main content</a--> 
 				<div class="brand" class="text-center">
 					<?php if ( get_header_image() ) { ?>
 						<a href="<?php echo esc_url(home_url()); ?>">

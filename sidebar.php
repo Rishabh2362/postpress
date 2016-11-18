@@ -9,6 +9,3 @@
  * @since IAMSocial 1.0.0
  */
 ?>
-<aside>
-	<?php dynamic_sidebar( 'primary-sidebar' ); ?>
-</aside>
