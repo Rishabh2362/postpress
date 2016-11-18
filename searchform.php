@@ -3,8 +3,8 @@
  * Include the search form in the top nav bar, formatted with Bootstrap styles
  *
  * @package PostPress
- * @subpackage PostPress 1.0
- * @since PostPress 1.0
+ * @subpackage PostPress 1.0.0
+ * @since PostPress 1.0.0
  */
 ?>
 <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">

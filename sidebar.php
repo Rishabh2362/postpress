@@ -5,7 +5,7 @@
  * Displays on posts and pages.
  *
  * @package WordPress
- * @subpackage IAMSocial 2.0
- * @since IAMSocial 1.0.0
+ * @subpackage PostPress 1.0.0
+ * @since PostPress 1.0.0
  */
 ?>

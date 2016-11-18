@@ -5,8 +5,8 @@
  * Displays all of the <head> section and everything up till #main
  *
  * @package WordPress
- * @subpackage PostPress 1.0
- * @since PostPress 1.0
+ * @subpackage PostPress 1.0.0
+ * @since PostPress 1.0.0
  */
 ?>
 <!DOCTYPE html>
@@ -39,7 +39,7 @@
 		<div class="row">
 
 			<!--header / main sidebar-->
-			<header class="col-lg-3" id="intro">
+			<header class="col-lg-3" id="intro" role="navigation">
 				<div id="skip"><a href="#list-posts">Skip to Main Content</a></div> 
 				<!--a href="#list-posts" class="sr-only">Skip to main content</a--> 
 				<div class="brand" class="text-center">

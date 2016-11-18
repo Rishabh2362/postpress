@@ -39,43 +39,41 @@ https://github.com/WPTRT/code-examples/blob/master/customizer/sanitization-callb
 
 Fonts
 
-Abel (Google Fonts), copyright MADType
-Licensed under the terms of the SIL Open Font license
-https://www.google.com/fonts/specimen/Abel
+Delius (Google Fonts), copyright Natalia Raices
+Open Font License 
+https://www.google.com/fonts/specimen/Delius
 
-New Cycle (Google Fonts), Nathan Willis
-Licensed under the terms of the SIL Open Font license
-https://www.google.com/fonts/specimen/News+Cycle
+Covered By Your Grace (Google Fonts), Kimberly Geswein
+Open Font license
+https://www.google.com/fonts/specimen/Covered+By+Your+Grace
 
-Open Sans Condensed (Google Fonts), Steve Matteson
-Licensed under the terms of the Apache License, version 2.0
-https://www.google.com/fonts/specimen/Open+Sans+Condensed
-
-Oswald (Google Fonts), Vernon Adams
-Licensed under the terms of the SIL Open Font license
-https://www.google.com/fonts/specimen/Oswald
-
-Quicksand (Google Fonts), Andrew Paglinawan
-Licensed under the terms of the SIL Open Font license
-https://www.google.com/fonts/specimen/Quicksand
-
-Shadow (Google Fonts), Kimberly Geswein
-Licensed under the terms of the SIL Open Font license
+Shadows Into Light Two (Google Fonts), Kimberly Geswein
+Open Font license
 https://www.google.com/fonts/specimen/Shadows+Into+Light+Two
 
-Images
+Kalam (Google Fonts), Indian Type Foundry
+Open Font license
+https://www.google.com/fonts/specimen/Kalam
 
-slide-1, (Pixabay) copyright Unsplash
-Licensed under the terms of CC0 
-https://pixabay.com/en/office-meeting-business-partners-336368/
+Patrick Hand (Google Fonts), Patrick Wagesreiter
+Open Font license
+https://www.google.com/fonts/specimen/Patrick+Hand
 
-slide-2, (Pixabay) copyright Life-Of-Pix
-Licensed under the terms of CC0 
-https://pixabay.com/en/home-office-notebook-home-couch-569153/
+Neucha (Google Fonts), Jovanny Lemonad
+Open Font license
+https://www.google.com/fonts/specimen/Neucha
 
-slide-3, (Pixabay) copyright StartupStockPhotos
-Licensed under the terms of CC0 
-https://pixabay.com/en/whiteboard-man-presentation-write-849811/
+Delius Swash Caps (Google Fonts), Natalia Raices
+Open Font license
+https://www.google.com/fonts/specimen/Delius+Swash+Caps
+
+Itim (Google Fonts), Cadson Demak
+Open Font license
+https://www.google.com/fonts/specimen/Itim
+
+Dekko (Google Fonts), Sorkin Type
+Open Font license
+https://www.google.com/fonts/specimen/Dekko
 
 
 == Description ==
@@ -104,7 +102,7 @@ This theme is built upon Bootstrap 3.
 == Basic set up ==
 
 1. Add a menu in the "Primary Menu" area  
-2. Add menu or widget in the different footer area: left, center and right.
+2. Add menu or widget in the different footer area: Primary Sidebar, Secondary Sidebar and Top Widgets.
 
 == Customization ==
 

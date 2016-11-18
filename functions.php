@@ -3,8 +3,8 @@
  * PostPress functions and definitions
  *
  * @package WordPress
- * @subpackage PostPress 1.0
- * @since PostPress 1.0
+ * @subpackage PostPress 1.0.0
+ * @since PostPress 1.0.0
  */
 
 /*

@@ -15,7 +15,7 @@ function postpress_customize_register( $wp_customize ) {
 	$wp_customize->add_panel( 'postpress_general', array(
 		'priority'       => 10,
 		'capability'     => 'edit_theme_options',
-		'title'          => __( 'postpress General Settings', 'postpress' ),
+		'title'          => __( 'PostPress General Settings', 'postpress' ),
 		'description'    => __( 'Change your colors and fonts', 'postpress' ),
 	) );
 
@@ -74,7 +74,7 @@ function postpress_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_section( 'postpress_fonts_section' , array(
-		'title'      => __( 'postpress Fonts', 'postpress' ),
+		'title'      => __( 'PostPress Fonts', 'postpress' ),
 		'priority'   => '31',
 		'panel'      => 'postpress_general',
 	) );
