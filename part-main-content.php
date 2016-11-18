@@ -1,6 +1,6 @@
 <?php
 /**
- * Include WordPress Loop 
+ * Include WordPress Loop
  *
  * @package WordPress
  * @subpackage PostPress 1.0.0
@@ -12,15 +12,15 @@
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> 
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="card-header">
 		<h4 class="card-title">
 				<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 						<?php the_title(); ?>
 				</a>
 		</h4>
-		<h6 class="card-subtitle text-muted"><i class="fa fa-calendar-o"></i> <?php the_time( 'F jS, Y' ) ?> </h6>
-	</div>  
+		<h6 class="card-subtitle text-muted"><i class="fa fa-calendar-o"></i> <?php the_time( __( 'F jS, Y', 'postpress' ) ) ?> </h6>
+	</div>
 
 	<?php if ( is_single() || is_page() ) { ?>
 		<?php if ( has_post_thumbnail() ) { ?>
@@ -47,7 +47,7 @@
 	<?php	} ?>
 
 		<ul class="list-group list-group-flush">
-			<?php 
+			<?php
 			/* Check if the post is divided in several pages. If so, show the pagination */
 			global $numpages;
 			if ( $numpages > 1 ) {
@@ -79,7 +79,7 @@
 </article>
 <?php
 comments_template();
-endwhile; ?> 
+endwhile; ?>
 
 <!-- Navigation within category/archive/blog -->
 <?php
@@ -91,7 +91,7 @@ if ( $prev_link || $next_link ) { ?>
 		<?php next_posts_link( '<i class="fa fa-chevron-left"></i> '.__( 'Previous Posts', 'postpress' ) ); ?>
 		<?php previous_posts_link( __( 'Next Posts', 'postpress' ).' <i class="fa fa-chevron-right"></i>' ); ?>
 	</nav>
-<?php } ?> 
+<?php } ?>
 
 <!-- Navigation within single -->
 <?php  if ( is_single() ) {  ?>
@@ -99,11 +99,11 @@ if ( $prev_link || $next_link ) { ?>
 		<?php next_post_link( '%link', '<i class="fa fa-chevron-left"></i> '.__( 'Prev', 'postpress' ), true ); ?>
 		<?php previous_post_link( '%link', __( 'Next', 'postpress' ).' <i class="fa fa-chevron-right"></i>', true ); ?>
 	</nav>
-<?php } ?>  
+<?php } ?>
 
-<!-- No post found -->           
+<!-- No post found -->
 <?php else : ?>
-	<article class="sticky"> 
+	<article class="sticky">
 		<div class="card-header">
 			<h4 class="card-title"><?php esc_html_e( 'Sorry...','postpress' ); ?></h4>
 			<h6 class="card-subtitle text-muted"><i class="fa fa-exclamation-circle"></i> <?php esc_html_e( 'Looks like something went wrong','postpress' ); ?> </h6>
@@ -117,6 +117,6 @@ if ( $prev_link || $next_link ) { ?>
 		    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="card-link"><?php esc_html_e( 'Back to Homepage','postpress' ); ?></a>
 		</div>
 	</article>
-	
-	
+
+
 <?php endif; ?>
