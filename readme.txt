@@ -78,7 +78,7 @@ https://www.google.com/fonts/specimen/Dekko
 
 == Description ==
 
-A Post-it! looking like blog. Choose among 14 colors combinations and 10 handwriting like Google fonts to match your brand directly from the WordPress customize menu. Set up posts as "Sticky" and get them to stay on the top and stand out with colors. This responsive theme is ideal for blogs, entertainement or news websites. It is accessibility ready and supports RTL formats.
+A Post-it! looking like blog. Choose among 14 colors combinations and 10 handwriting like Google fonts to match your brand directly from the WordPress customize menu. Hook up your social media profiles very easily via the special customizer included with this theme directly from your WordPress admin site. Set up posts as "Sticky" and get them to stay on the top and stand out with colors. This responsive theme is ideal for blogs, entertainement or news websites. It is accessibility ready and supports RTL formats.
 
 A few notes about the sections above:
 
