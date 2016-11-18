@@ -35,8 +35,8 @@ if ( post_password_required() ) {
 <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 	<article class="">
 		<nav class="row" role="navigation">
-			<small class="nav-previous col-xs-6"><?php previous_comments_link( '&larr; '.__( 'Previous Comments' , 'postpress' ) ); ?></small>
-			<small class="nav-previous col-xs-6 text-right"><?php next_comments_link( __( 'Next Comments' , 'postpress' ).' &rarr;' ); ?></small>
+			<small class="nav-previous col-xs-6"><?php previous_comments_link( __( '&larr; Previous Comments' , 'postpress' ) ) ?></small>
+			<small class="nav-previous col-xs-6 text-right"><?php next_comments_link( __( 'Next Comments &rarr;' , 'postpress' ) ) ?></small>
 		</nav>
 	</article>
 <?php endif; ?>
@@ -44,9 +44,3 @@ if ( post_password_required() ) {
 <?php endif; // have_comments() ?>
 
 <?php if ( comments_open() ) { comment_form(); } ?>
-
-
-
-
-
-
