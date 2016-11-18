@@ -25,11 +25,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-		<meta name="description" content="PostPress - Your WordPress Made Social">
-		<meta name="author" content="Isabelle Garcia">
 
 		<?php wp_head(); ?> 
- 
 	</head>
 
 	<body <?php body_class('antialiased'); ?>>
@@ -40,8 +37,8 @@
 
 			<!--header / main sidebar-->
 			<header class="col-lg-3" id="intro" role="navigation">
-				<div id="skip"><a href="#list-posts">Skip to Main Content</a></div> 
-				<!--a href="#list-posts" class="sr-only">Skip to main content</a--> 
+				<div id="skip"><a href="#list-posts">Skip to Main Content</a></div>
+				<!--a href="#list-posts" class="sr-only">Skip to main content</a-->
 				<div class="brand" class="text-center">
 					<?php if ( get_header_image() ) { ?>
 						<a href="<?php echo esc_url(home_url()); ?>">
