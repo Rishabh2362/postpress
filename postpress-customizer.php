@@ -79,7 +79,7 @@ function postpress_customize_register( $wp_customize ) {
 		'panel'      => 'postpress_general',
 	) );
 	$wp_customize->add_setting( 'paragraphs_fonts' , array(
-		'default' => 'Covered',
+		'default' => 'Delius',
 		'sanitize_callback'  => 'sanitize_text_field',
 	) );
 	$wp_customize->add_control(
@@ -291,7 +291,7 @@ function postpress_change_google_fonts() {
 		),
 		'Caveat' => array(
 			'name' => 'Caveat Brush',
-			'css' => 'Caveat',
+			'css' => 'Caveat Brush',
 			'query' => 'Caveat+Brush',
 		),
 		'Itim' => array(
@@ -305,7 +305,7 @@ function postpress_change_google_fonts() {
 			'query' => 'Dekko',
 		),
 	);
-	$paragraphs_font = get_theme_mod( 'paragraphs_fonts', 'Covered' );
+	$paragraphs_font = get_theme_mod( 'paragraphs_fonts', 'Delius' );
 
 	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family='.$fonts[ $paragraphs_font ]['query'] );
 

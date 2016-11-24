@@ -120,4 +120,5 @@ This theme is built upon Bootstrap 3.
 * Changed Screenshot
 * Remove 'author' and 'description' meta tags, and fix the unstranslated strings
 * Changed theme default color to yellow (Gold)
+* Made Delius as the default font
 
