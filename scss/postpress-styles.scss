@@ -111,10 +111,27 @@ input.submit{
 			@extend .card-primary;
 			a{
 				//color: darken($brand-primary, 15%);
-				color: white;
+				//color: white;
+				color: black;
+				&:hover{
+					//color: darken($brand-primary,50%);
+					//text-decoration: none;
+				}
+			}
+			h4.card-title{
+				a{
+					&:hover{
+						color: darken($brand-primary,50%) !important;
+						text-decoration: none;
+					}
+				}
 			}
 			p, small{
-				@extend .card-text;
+				//@extend .card-text;
+				color: black;
+			}
+			.text-muted{
+				color: darken($brand-primary,50%);
 			}
 			.card-footer{
 				//border: 1px solid red;

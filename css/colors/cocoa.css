@@ -139,7 +139,7 @@ aside ul .nav-item.open li a:focus, aside ul li .nav-item.open a:focus, .nav-pil
   border-color: #6c5140;
 }
 
-.card-primary .card-title a:hover, #list-posts article.sticky .card-title a:hover,
+.card-primary h4.card-title a:hover, #list-posts article.sticky h4.card-title a:hover,
 .card-primary .text-muted, #list-posts article.sticky .text-muted{
   color: #060000 !important; //50% dark
 }
@@ -147,7 +147,7 @@ aside ul .nav-item.open li a:focus, aside ul li .nav-item.open a:focus, .nav-pil
 .card-inverse .card-link, #list-posts article.sticky .card-link, .card-inverse .card-text, #list-posts article.sticky .card-text, #list-posts article.sticky p, #list-posts article.sticky small, .card-inverse .card-subtitle, #list-posts article.sticky .card-subtitle, .card-inverse .card-blockquote .blockquote-footer, #list-posts article.sticky .card-blockquote .blockquote-footer,
 .card-inverse .card-header, #list-posts article.sticky .card-header, .card-inverse .card-footer, #list-posts article.sticky .card-footer, .card-inverse .card-title, #list-posts article.sticky .card-title, .card-inverse .card-blockquote, #list-posts article.sticky .card-blockquote,
 #list-posts article.sticky a{
-  //color: black;
+  color: white;
 }
 
 .card-outline-primary {
