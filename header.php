@@ -112,7 +112,7 @@
 				);
 				wp_nav_menu( $defaults );
 				?>
-				<div class="hidden-md-down">
+				<div class="hidden-md-down widgets">
 					<?php get_sidebar(); ?>
 				</div>
 			</header><!-- / header-->

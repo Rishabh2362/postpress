@@ -18,12 +18,14 @@ header{ //make sure input texts in sidebars do not push content
   .widgets{
 	padding-bottom: 1rem;
 	padding-top: 0.5rem;
-	//border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	//border-color: rgba(0, 0, 0, 0.1) 
-	//@extend .hr;
-	//border-top-color: darken($border, 5%);
-	h5{
-		text-transform: uppercase;
+	#sidebar{
+		>ul{
+			>li{
+				padding-top: 1em;
+				//border: 1px solid red;
+				border-bottom: none;
+			}	
+		}
 	}
   }
   ul{
@@ -41,55 +43,5 @@ header{ //make sure input texts in sidebars do not push content
 	}
 }
 
-
-.nav-pills .current-menu-item .nav-link, 
-.nav-pills .current-menu-item .nav-link:focus, 
-.nav-pills .current-menu-item .nav-link:hover,
-aside .current_page_item a,
-aside .current_page_item a:focus,
-aside .current_page_item a:hover,
-aside .current-cat a,
-aside .current-cat a:focus,
-aside .current-cat a:hover{ 
-/* 
-  background-color: #0275d8;
-  color: #fff;
-  cursor: default;
-  border-radius: 0.25rem;
-  //display: block; 
-  //padding: 0.5em 1em;
-*/
-	i{
-		@extend .fa;
-		@extend .fa-chevron-right;
-		//float: right;
-		margin-left:0.3rem;
-	}
-}
-
-.nav-pills .nav-link, aside ul .nav-link, aside ul li a{
-	padding: 0.5rem 0;
-}
-
-nav .nav-pills > li{
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	text-transform: uppercase;
-	} 
-
-.sub-menu{
-	margin-top: 0.2rem;
-	padding-left: 0;
-	padding-right: 0;
-	li a.nav-link{
-		padding: 0.2em 1em;
-		font-size: 0.9rem;
-	}
-}
-
-#extras{
-	a{
-		margin:0 0.2rem 0 0;
-	}
-}
 
  

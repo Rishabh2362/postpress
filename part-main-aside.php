@@ -8,6 +8,9 @@
 */
 ?>
 <?php
+
+//$socialicons = array('icon1_link' => 'fa-facebook-square', );
+
 if ( get_theme_mod( 'icon1_link') ) { ?>
 <a href="<?php echo esc_url(get_theme_mod('icon1_link')); ?>" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
 <?php } 

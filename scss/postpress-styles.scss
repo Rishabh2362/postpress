@@ -2,6 +2,7 @@
 @import "font-awesome/font-awesome";
 @import "pp-grid";
 @import "header";
+@import "sidebar";
 @import "top-widgets";
 @import "accessibility";
 
@@ -16,7 +17,7 @@ body{
 
 .btn-toggle-menu{
  	height: 40px;
-}
+} 
 
 input, textarea{
 	@extend .form-control; 
