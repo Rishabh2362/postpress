@@ -38,7 +38,6 @@
 			<?php the_excerpt(); ?>
 		</div>
 		<?php if ( has_post_thumbnail() ) { ?>
-		<!--img src="http://placehold.it/700x150?text=featuredImg" class="img-responsive"-->
 		<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 			<?php echo the_post_thumbnail();  ?>
 		</a>
