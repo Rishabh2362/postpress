@@ -3799,31 +3799,31 @@ tbody.collapse.in {
   content: "Browse";
 }
 
-.nav, aside ul {
+.nav, header ul {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
 }
 
-.nav-link, aside ul li a {
+.nav-link, header ul li a {
   display: inline-block;
 }
 
 .nav-link:focus,
-aside ul li a:focus,
-.nav-link:hover, aside ul li a:hover {
+header ul li a:focus,
+.nav-link:hover, header ul li a:hover {
   text-decoration: none;
 }
 
-.nav-link.disabled, aside ul li a.disabled {
+.nav-link.disabled, header ul li a.disabled {
   color: #818a91;
 }
 
 .nav-link.disabled,
-aside ul li a.disabled,
+header ul li a.disabled,
 .nav-link.disabled:focus,
-aside ul li a.disabled:focus,
-.nav-link.disabled:hover, aside ul li a.disabled:hover {
+header ul li a.disabled:focus,
+.nav-link.disabled:hover, header ul li a.disabled:hover {
   color: #818a91;
   cursor: not-allowed;
   background-color: transparent;
@@ -3834,7 +3834,7 @@ aside ul li a.disabled:focus,
 }
 
 .nav-inline .nav-item + .nav-item,
-.nav-inline .nav-link + .nav-link, .nav-inline aside ul li a + .nav-link, aside ul li .nav-inline a + .nav-link, .nav-inline aside ul li .nav-link + a, aside ul li .nav-inline .nav-link + a, .nav-inline aside ul li a + a, aside ul li .nav-inline a + a {
+.nav-inline .nav-link + .nav-link, .nav-inline header ul li a + .nav-link, header ul li .nav-inline a + .nav-link, .nav-inline header ul li .nav-link + a, header ul li .nav-inline .nav-link + a, .nav-inline header ul li a + a, header ul li .nav-inline a + a {
   margin-left: 1rem;
 }
 
@@ -3857,7 +3857,7 @@ aside ul li a.disabled:focus,
   margin-left: 0.2rem;
 }
 
-.nav-tabs .nav-link, .nav-tabs aside ul li a, aside ul li .nav-tabs a {
+.nav-tabs .nav-link, .nav-tabs header ul li a, header ul li .nav-tabs a {
   display: block;
   padding: 0.5em 1em;
   border: 1px solid transparent;
@@ -3866,32 +3866,32 @@ aside ul li a.disabled:focus,
 }
 
 .nav-tabs .nav-link:focus,
-.nav-tabs aside ul li a:focus,
-aside ul li .nav-tabs a:focus, .nav-tabs .nav-link:hover, .nav-tabs aside ul li a:hover, aside ul li .nav-tabs a:hover {
+.nav-tabs header ul li a:focus,
+header ul li .nav-tabs a:focus, .nav-tabs .nav-link:hover, .nav-tabs header ul li a:hover, header ul li .nav-tabs a:hover {
   border-color: #eceeef #eceeef #ddd;
 }
 
 .nav-tabs .nav-link.disabled,
-.nav-tabs aside ul li a.disabled,
-aside ul li .nav-tabs a.disabled, .nav-tabs .nav-link.disabled:focus,
-.nav-tabs aside ul li a.disabled:focus,
-aside ul li .nav-tabs a.disabled:focus, .nav-tabs .nav-link.disabled:hover, .nav-tabs aside ul li a.disabled:hover, aside ul li .nav-tabs a.disabled:hover {
+.nav-tabs header ul li a.disabled,
+header ul li .nav-tabs a.disabled, .nav-tabs .nav-link.disabled:focus,
+.nav-tabs header ul li a.disabled:focus,
+header ul li .nav-tabs a.disabled:focus, .nav-tabs .nav-link.disabled:hover, .nav-tabs header ul li a.disabled:hover, header ul li .nav-tabs a.disabled:hover {
   color: #818a91;
   background-color: transparent;
   border-color: transparent;
 }
 
 .nav-tabs .nav-link.active,
-.nav-tabs aside ul li a.active,
-aside ul li .nav-tabs a.active, .nav-tabs .nav-link.active:focus,
-.nav-tabs aside ul li a.active:focus,
-aside ul li .nav-tabs a.active:focus, .nav-tabs .nav-link.active:hover,
-.nav-tabs aside ul li a.active:hover,
-aside ul li .nav-tabs a.active:hover, .nav-tabs .nav-item.open .nav-link,
-.nav-tabs .nav-item.open aside ul li a,
-aside ul li .nav-tabs .nav-item.open a, .nav-tabs .nav-item.open .nav-link:focus,
-.nav-tabs .nav-item.open aside ul li a:focus,
-aside ul li .nav-tabs .nav-item.open a:focus, .nav-tabs .nav-item.open .nav-link:hover, .nav-tabs .nav-item.open aside ul li a:hover, aside ul li .nav-tabs .nav-item.open a:hover {
+.nav-tabs header ul li a.active,
+header ul li .nav-tabs a.active, .nav-tabs .nav-link.active:focus,
+.nav-tabs header ul li a.active:focus,
+header ul li .nav-tabs a.active:focus, .nav-tabs .nav-link.active:hover,
+.nav-tabs header ul li a.active:hover,
+header ul li .nav-tabs a.active:hover, .nav-tabs .nav-item.open .nav-link,
+.nav-tabs .nav-item.open header ul li a,
+header ul li .nav-tabs .nav-item.open a, .nav-tabs .nav-item.open .nav-link:focus,
+.nav-tabs .nav-item.open header ul li a:focus,
+header ul li .nav-tabs .nav-item.open a:focus, .nav-tabs .nav-item.open .nav-link:hover, .nav-tabs .nav-item.open header ul li a:hover, header ul li .nav-tabs .nav-item.open a:hover {
   color: #55595c;
   background-color: #fff;
   border-color: #ddd #ddd transparent;
@@ -3903,50 +3903,50 @@ aside ul li .nav-tabs .nav-item.open a:focus, .nav-tabs .nav-item.open .nav-link
   border-top-left-radius: 0;
 }
 
-.nav-pills::after, aside ul::after {
+.nav-pills::after, header ul::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.nav-pills .nav-item, aside ul .nav-item {
+.nav-pills .nav-item, header ul .nav-item {
   float: left;
 }
 
-.nav-pills .nav-item + .nav-item, aside ul .nav-item + .nav-item {
+.nav-pills .nav-item + .nav-item, header ul .nav-item + .nav-item {
   margin-left: 0.2rem;
 }
 
-.nav-pills .nav-link, aside ul .nav-link, aside ul li a {
+.nav-pills .nav-link, header ul .nav-link, header ul li a {
   display: block;
   padding: 0.5em 1em;
   border-radius: 0.25rem;
 }
 
 .nav-pills .nav-link.active,
-aside ul .nav-link.active,
-aside ul li a.active, .nav-pills .nav-link.active:focus,
-aside ul .nav-link.active:focus,
-aside ul li a.active:focus, .nav-pills .nav-link.active:hover,
-aside ul .nav-link.active:hover,
-aside ul li a.active:hover, .nav-pills .nav-item.open .nav-link,
-aside ul .nav-item.open .nav-link,
-.nav-pills .nav-item.open aside ul li a,
-aside ul .nav-item.open li a, aside ul li .nav-item.open a, .nav-pills .nav-item.open .nav-link:focus,
-aside ul .nav-item.open .nav-link:focus,
-.nav-pills .nav-item.open aside ul li a:focus,
-aside ul .nav-item.open li a:focus, aside ul li .nav-item.open a:focus, .nav-pills .nav-item.open .nav-link:hover, aside ul .nav-item.open .nav-link:hover, .nav-pills .nav-item.open aside ul li a:hover, aside ul .nav-item.open li a:hover, aside ul li .nav-item.open a:hover {
+header ul .nav-link.active,
+header ul li a.active, .nav-pills .nav-link.active:focus,
+header ul .nav-link.active:focus,
+header ul li a.active:focus, .nav-pills .nav-link.active:hover,
+header ul .nav-link.active:hover,
+header ul li a.active:hover, .nav-pills .nav-item.open .nav-link,
+header ul .nav-item.open .nav-link,
+.nav-pills .nav-item.open header ul li a,
+header ul .nav-item.open li a, header ul li .nav-item.open a, .nav-pills .nav-item.open .nav-link:focus,
+header ul .nav-item.open .nav-link:focus,
+.nav-pills .nav-item.open header ul li a:focus,
+header ul .nav-item.open li a:focus, header ul li .nav-item.open a:focus, .nav-pills .nav-item.open .nav-link:hover, header ul .nav-item.open .nav-link:hover, .nav-pills .nav-item.open header ul li a:hover, header ul .nav-item.open li a:hover, header ul li .nav-item.open a:hover {
   color: #fff;
   cursor: default;
   background-color: #f4b942;
 }
 
-.nav-stacked .nav-item, aside ul .nav-item {
+.nav-stacked .nav-item, header ul .nav-item {
   display: block;
   float: none;
 }
 
-.nav-stacked .nav-item + .nav-item, aside ul .nav-item + .nav-item {
+.nav-stacked .nav-item + .nav-item, header ul .nav-item + .nav-item {
   margin-top: 0.2rem;
   margin-left: 0;
 }
@@ -4074,13 +4074,13 @@ aside ul .nav-item.open li a:focus, aside ul li .nav-item.open a:focus, .nav-pil
   float: left;
 }
 
-.navbar-nav .nav-link, .navbar-nav aside ul li a, aside ul li .navbar-nav a {
+.navbar-nav .nav-link, .navbar-nav header ul li a, header ul li .navbar-nav a {
   display: block;
   padding-top: .425rem;
   padding-bottom: .425rem;
 }
 
-.navbar-nav .nav-link + .nav-link, .navbar-nav aside ul li a + .nav-link, aside ul li .navbar-nav a + .nav-link, .navbar-nav aside ul li .nav-link + a, aside ul li .navbar-nav .nav-link + a, .navbar-nav aside ul li a + a, aside ul li .navbar-nav a + a {
+.navbar-nav .nav-link + .nav-link, .navbar-nav header ul li a + .nav-link, header ul li .navbar-nav a + .nav-link, .navbar-nav header ul li .nav-link + a, header ul li .navbar-nav .nav-link + a, .navbar-nav header ul li a + a, header ul li .navbar-nav a + a {
   margin-left: 1rem;
 }
 
@@ -4097,39 +4097,39 @@ aside ul .nav-item.open li a:focus, aside ul li .nav-item.open a:focus, .nav-pil
   color: rgba(0, 0, 0, 0.8);
 }
 
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav aside ul li a, aside ul li .navbar-light .navbar-nav a {
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav header ul li a, header ul li .navbar-light .navbar-nav a {
   color: rgba(0, 0, 0, 0.3);
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav aside ul li a:focus,
-aside ul li .navbar-light .navbar-nav a:focus, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav aside ul li a:hover, aside ul li .navbar-light .navbar-nav a:hover {
+.navbar-light .navbar-nav header ul li a:focus,
+header ul li .navbar-light .navbar-nav a:focus, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav header ul li a:hover, header ul li .navbar-light .navbar-nav a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
 .navbar-light .navbar-nav .open > .nav-link,
-.navbar-light .navbar-nav aside ul li .open > a,
-aside ul li .navbar-light .navbar-nav .open > a, .navbar-light .navbar-nav .open > .nav-link:focus,
-.navbar-light .navbar-nav aside ul li .open > a:focus,
-aside ul li .navbar-light .navbar-nav .open > a:focus, .navbar-light .navbar-nav .open > .nav-link:hover,
-.navbar-light .navbar-nav aside ul li .open > a:hover,
-aside ul li .navbar-light .navbar-nav .open > a:hover, .navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav aside ul li .active > a,
-aside ul li .navbar-light .navbar-nav .active > a, .navbar-light .navbar-nav .active > .nav-link:focus,
-.navbar-light .navbar-nav aside ul li .active > a:focus,
-aside ul li .navbar-light .navbar-nav .active > a:focus, .navbar-light .navbar-nav .active > .nav-link:hover,
-.navbar-light .navbar-nav aside ul li .active > a:hover,
-aside ul li .navbar-light .navbar-nav .active > a:hover, .navbar-light .navbar-nav .nav-link.open,
-.navbar-light .navbar-nav aside ul li a.open,
-aside ul li .navbar-light .navbar-nav a.open, .navbar-light .navbar-nav .nav-link.open:focus,
-.navbar-light .navbar-nav aside ul li a.open:focus,
-aside ul li .navbar-light .navbar-nav a.open:focus, .navbar-light .navbar-nav .nav-link.open:hover,
-.navbar-light .navbar-nav aside ul li a.open:hover,
-aside ul li .navbar-light .navbar-nav a.open:hover, .navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav aside ul li a.active,
-aside ul li .navbar-light .navbar-nav a.active, .navbar-light .navbar-nav .nav-link.active:focus,
-.navbar-light .navbar-nav aside ul li a.active:focus,
-aside ul li .navbar-light .navbar-nav a.active:focus, .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav aside ul li a.active:hover, aside ul li .navbar-light .navbar-nav a.active:hover {
+.navbar-light .navbar-nav header ul li .open > a,
+header ul li .navbar-light .navbar-nav .open > a, .navbar-light .navbar-nav .open > .nav-link:focus,
+.navbar-light .navbar-nav header ul li .open > a:focus,
+header ul li .navbar-light .navbar-nav .open > a:focus, .navbar-light .navbar-nav .open > .nav-link:hover,
+.navbar-light .navbar-nav header ul li .open > a:hover,
+header ul li .navbar-light .navbar-nav .open > a:hover, .navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav header ul li .active > a,
+header ul li .navbar-light .navbar-nav .active > a, .navbar-light .navbar-nav .active > .nav-link:focus,
+.navbar-light .navbar-nav header ul li .active > a:focus,
+header ul li .navbar-light .navbar-nav .active > a:focus, .navbar-light .navbar-nav .active > .nav-link:hover,
+.navbar-light .navbar-nav header ul li .active > a:hover,
+header ul li .navbar-light .navbar-nav .active > a:hover, .navbar-light .navbar-nav .nav-link.open,
+.navbar-light .navbar-nav header ul li a.open,
+header ul li .navbar-light .navbar-nav a.open, .navbar-light .navbar-nav .nav-link.open:focus,
+.navbar-light .navbar-nav header ul li a.open:focus,
+header ul li .navbar-light .navbar-nav a.open:focus, .navbar-light .navbar-nav .nav-link.open:hover,
+.navbar-light .navbar-nav header ul li a.open:hover,
+header ul li .navbar-light .navbar-nav a.open:hover, .navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav header ul li a.active,
+header ul li .navbar-light .navbar-nav a.active, .navbar-light .navbar-nav .nav-link.active:focus,
+.navbar-light .navbar-nav header ul li a.active:focus,
+header ul li .navbar-light .navbar-nav a.active:focus, .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav header ul li a.active:hover, header ul li .navbar-light .navbar-nav a.active:hover {
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -4150,39 +4150,39 @@ aside ul li .navbar-light .navbar-nav a.active:focus, .navbar-light .navbar-nav 
   color: white;
 }
 
-.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav aside ul li a, aside ul li .navbar-dark .navbar-nav a {
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav header ul li a, header ul li .navbar-dark .navbar-nav a {
   color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav aside ul li a:focus,
-aside ul li .navbar-dark .navbar-nav a:focus, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav aside ul li a:hover, aside ul li .navbar-dark .navbar-nav a:hover {
+.navbar-dark .navbar-nav header ul li a:focus,
+header ul li .navbar-dark .navbar-nav a:focus, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav header ul li a:hover, header ul li .navbar-dark .navbar-nav a:hover {
   color: rgba(255, 255, 255, 0.75);
 }
 
 .navbar-dark .navbar-nav .open > .nav-link,
-.navbar-dark .navbar-nav aside ul li .open > a,
-aside ul li .navbar-dark .navbar-nav .open > a, .navbar-dark .navbar-nav .open > .nav-link:focus,
-.navbar-dark .navbar-nav aside ul li .open > a:focus,
-aside ul li .navbar-dark .navbar-nav .open > a:focus, .navbar-dark .navbar-nav .open > .nav-link:hover,
-.navbar-dark .navbar-nav aside ul li .open > a:hover,
-aside ul li .navbar-dark .navbar-nav .open > a:hover, .navbar-dark .navbar-nav .active > .nav-link,
-.navbar-dark .navbar-nav aside ul li .active > a,
-aside ul li .navbar-dark .navbar-nav .active > a, .navbar-dark .navbar-nav .active > .nav-link:focus,
-.navbar-dark .navbar-nav aside ul li .active > a:focus,
-aside ul li .navbar-dark .navbar-nav .active > a:focus, .navbar-dark .navbar-nav .active > .nav-link:hover,
-.navbar-dark .navbar-nav aside ul li .active > a:hover,
-aside ul li .navbar-dark .navbar-nav .active > a:hover, .navbar-dark .navbar-nav .nav-link.open,
-.navbar-dark .navbar-nav aside ul li a.open,
-aside ul li .navbar-dark .navbar-nav a.open, .navbar-dark .navbar-nav .nav-link.open:focus,
-.navbar-dark .navbar-nav aside ul li a.open:focus,
-aside ul li .navbar-dark .navbar-nav a.open:focus, .navbar-dark .navbar-nav .nav-link.open:hover,
-.navbar-dark .navbar-nav aside ul li a.open:hover,
-aside ul li .navbar-dark .navbar-nav a.open:hover, .navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav aside ul li a.active,
-aside ul li .navbar-dark .navbar-nav a.active, .navbar-dark .navbar-nav .nav-link.active:focus,
-.navbar-dark .navbar-nav aside ul li a.active:focus,
-aside ul li .navbar-dark .navbar-nav a.active:focus, .navbar-dark .navbar-nav .nav-link.active:hover, .navbar-dark .navbar-nav aside ul li a.active:hover, aside ul li .navbar-dark .navbar-nav a.active:hover {
+.navbar-dark .navbar-nav header ul li .open > a,
+header ul li .navbar-dark .navbar-nav .open > a, .navbar-dark .navbar-nav .open > .nav-link:focus,
+.navbar-dark .navbar-nav header ul li .open > a:focus,
+header ul li .navbar-dark .navbar-nav .open > a:focus, .navbar-dark .navbar-nav .open > .nav-link:hover,
+.navbar-dark .navbar-nav header ul li .open > a:hover,
+header ul li .navbar-dark .navbar-nav .open > a:hover, .navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav header ul li .active > a,
+header ul li .navbar-dark .navbar-nav .active > a, .navbar-dark .navbar-nav .active > .nav-link:focus,
+.navbar-dark .navbar-nav header ul li .active > a:focus,
+header ul li .navbar-dark .navbar-nav .active > a:focus, .navbar-dark .navbar-nav .active > .nav-link:hover,
+.navbar-dark .navbar-nav header ul li .active > a:hover,
+header ul li .navbar-dark .navbar-nav .active > a:hover, .navbar-dark .navbar-nav .nav-link.open,
+.navbar-dark .navbar-nav header ul li a.open,
+header ul li .navbar-dark .navbar-nav a.open, .navbar-dark .navbar-nav .nav-link.open:focus,
+.navbar-dark .navbar-nav header ul li a.open:focus,
+header ul li .navbar-dark .navbar-nav a.open:focus, .navbar-dark .navbar-nav .nav-link.open:hover,
+.navbar-dark .navbar-nav header ul li a.open:hover,
+header ul li .navbar-dark .navbar-nav a.open:hover, .navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav header ul li a.active,
+header ul li .navbar-dark .navbar-nav a.active, .navbar-dark .navbar-nav .nav-link.active:focus,
+.navbar-dark .navbar-nav header ul li a.active:focus,
+header ul li .navbar-dark .navbar-nav a.active:focus, .navbar-dark .navbar-nav .nav-link.active:hover, .navbar-dark .navbar-nav header ul li a.active:hover, header ul li .navbar-dark .navbar-nav a.active:hover {
   color: white;
 }
 
@@ -6810,15 +6810,15 @@ a.text-gray-dark:hover {
 }
 
 .fa, .nav-pills .current-menu-item .nav-link i,
-aside ul .current-menu-item .nav-link i,
-.nav-pills .current-menu-item aside ul li a i,
-aside ul li .nav-pills .current-menu-item a i, aside ul .current-menu-item li a i, aside ul li .current-menu-item a i, .nav-pills .current-menu-item .nav-link:focus i,
-aside ul .current-menu-item .nav-link:focus i,
-.nav-pills .current-menu-item aside ul li a:focus i,
-aside ul li .nav-pills .current-menu-item a:focus i, aside ul .current-menu-item li a:focus i, aside ul li .current-menu-item a:focus i, .nav-pills .current-menu-item .nav-link:hover i,
-aside ul .current-menu-item .nav-link:hover i,
-.nav-pills .current-menu-item aside ul li a:hover i,
-aside ul li .nav-pills .current-menu-item a:hover i, aside ul .current-menu-item li a:hover i, aside ul li .current-menu-item a:hover i, aside .current_page_item a i,
+header ul .current-menu-item .nav-link i,
+.nav-pills .current-menu-item header ul li a i,
+header ul li .nav-pills .current-menu-item a i, header ul .current-menu-item li a i, header ul li .current-menu-item a i, .nav-pills .current-menu-item .nav-link:focus i,
+header ul .current-menu-item .nav-link:focus i,
+.nav-pills .current-menu-item header ul li a:focus i,
+header ul li .nav-pills .current-menu-item a:focus i, header ul .current-menu-item li a:focus i, header ul li .current-menu-item a:focus i, .nav-pills .current-menu-item .nav-link:hover i,
+header ul .current-menu-item .nav-link:hover i,
+.nav-pills .current-menu-item header ul li a:hover i,
+header ul li .nav-pills .current-menu-item a:hover i, header ul .current-menu-item li a:hover i, header ul li .current-menu-item a:hover i, aside .current_page_item a i,
 aside .current_page_item a:focus i,
 aside .current_page_item a:hover i,
 aside .current-cat a i,
@@ -6897,25 +6897,25 @@ aside .current-cat a:hover i {
 }
 
 .fa.fa-pull-left, .nav-pills .current-menu-item .nav-link i.fa-pull-left,
-aside ul .current-menu-item .nav-link i.fa-pull-left,
-.nav-pills .current-menu-item aside ul li a i.fa-pull-left,
-aside ul li .nav-pills .current-menu-item a i.fa-pull-left, aside ul .current-menu-item li a i.fa-pull-left, aside ul li .current-menu-item a i.fa-pull-left, aside ul .current-menu-item .nav-link:focus i.fa-pull-left,
-.nav-pills .current-menu-item aside ul li a:focus i.fa-pull-left,
-aside ul li .nav-pills .current-menu-item a:focus i.fa-pull-left, aside ul .current-menu-item li a:focus i.fa-pull-left, aside ul li .current-menu-item a:focus i.fa-pull-left, aside ul .current-menu-item .nav-link:hover i.fa-pull-left,
-.nav-pills .current-menu-item aside ul li a:hover i.fa-pull-left,
-aside ul li .nav-pills .current-menu-item a:hover i.fa-pull-left, aside ul .current-menu-item li a:hover i.fa-pull-left, aside ul li .current-menu-item a:hover i.fa-pull-left, aside .current_page_item a i.fa-pull-left,
+header ul .current-menu-item .nav-link i.fa-pull-left,
+.nav-pills .current-menu-item header ul li a i.fa-pull-left,
+header ul li .nav-pills .current-menu-item a i.fa-pull-left, header ul .current-menu-item li a i.fa-pull-left, header ul li .current-menu-item a i.fa-pull-left, header ul .current-menu-item .nav-link:focus i.fa-pull-left,
+.nav-pills .current-menu-item header ul li a:focus i.fa-pull-left,
+header ul li .nav-pills .current-menu-item a:focus i.fa-pull-left, header ul .current-menu-item li a:focus i.fa-pull-left, header ul li .current-menu-item a:focus i.fa-pull-left, header ul .current-menu-item .nav-link:hover i.fa-pull-left,
+.nav-pills .current-menu-item header ul li a:hover i.fa-pull-left,
+header ul li .nav-pills .current-menu-item a:hover i.fa-pull-left, header ul .current-menu-item li a:hover i.fa-pull-left, header ul li .current-menu-item a:hover i.fa-pull-left, aside .current_page_item a i.fa-pull-left,
 aside .current-cat a i.fa-pull-left {
   margin-right: .3em;
 }
 
 .fa.fa-pull-right, .nav-pills .current-menu-item .nav-link i.fa-pull-right,
-aside ul .current-menu-item .nav-link i.fa-pull-right,
-.nav-pills .current-menu-item aside ul li a i.fa-pull-right,
-aside ul li .nav-pills .current-menu-item a i.fa-pull-right, aside ul .current-menu-item li a i.fa-pull-right, aside ul li .current-menu-item a i.fa-pull-right, aside ul .current-menu-item .nav-link:focus i.fa-pull-right,
-.nav-pills .current-menu-item aside ul li a:focus i.fa-pull-right,
-aside ul li .nav-pills .current-menu-item a:focus i.fa-pull-right, aside ul .current-menu-item li a:focus i.fa-pull-right, aside ul li .current-menu-item a:focus i.fa-pull-right, aside ul .current-menu-item .nav-link:hover i.fa-pull-right,
-.nav-pills .current-menu-item aside ul li a:hover i.fa-pull-right,
-aside ul li .nav-pills .current-menu-item a:hover i.fa-pull-right, aside ul .current-menu-item li a:hover i.fa-pull-right, aside ul li .current-menu-item a:hover i.fa-pull-right, aside .current_page_item a i.fa-pull-right,
+header ul .current-menu-item .nav-link i.fa-pull-right,
+.nav-pills .current-menu-item header ul li a i.fa-pull-right,
+header ul li .nav-pills .current-menu-item a i.fa-pull-right, header ul .current-menu-item li a i.fa-pull-right, header ul li .current-menu-item a i.fa-pull-right, header ul .current-menu-item .nav-link:focus i.fa-pull-right,
+.nav-pills .current-menu-item header ul li a:focus i.fa-pull-right,
+header ul li .nav-pills .current-menu-item a:focus i.fa-pull-right, header ul .current-menu-item li a:focus i.fa-pull-right, header ul li .current-menu-item a:focus i.fa-pull-right, header ul .current-menu-item .nav-link:hover i.fa-pull-right,
+.nav-pills .current-menu-item header ul li a:hover i.fa-pull-right,
+header ul li .nav-pills .current-menu-item a:hover i.fa-pull-right, header ul .current-menu-item li a:hover i.fa-pull-right, header ul li .current-menu-item a:hover i.fa-pull-right, aside .current_page_item a i.fa-pull-right,
 aside .current-cat a i.fa-pull-right {
   margin-left: .3em;
 }
@@ -6930,25 +6930,25 @@ aside .current-cat a i.fa-pull-right {
 }
 
 .fa.pull-left, .nav-pills .current-menu-item .nav-link i.pull-left,
-aside ul .current-menu-item .nav-link i.pull-left,
-.nav-pills .current-menu-item aside ul li a i.pull-left,
-aside ul li .nav-pills .current-menu-item a i.pull-left, aside ul .current-menu-item li a i.pull-left, aside ul li .current-menu-item a i.pull-left, aside ul .current-menu-item .nav-link:focus i.pull-left,
-.nav-pills .current-menu-item aside ul li a:focus i.pull-left,
-aside ul li .nav-pills .current-menu-item a:focus i.pull-left, aside ul .current-menu-item li a:focus i.pull-left, aside ul li .current-menu-item a:focus i.pull-left, aside ul .current-menu-item .nav-link:hover i.pull-left,
-.nav-pills .current-menu-item aside ul li a:hover i.pull-left,
-aside ul li .nav-pills .current-menu-item a:hover i.pull-left, aside ul .current-menu-item li a:hover i.pull-left, aside ul li .current-menu-item a:hover i.pull-left, aside .current_page_item a i.pull-left,
+header ul .current-menu-item .nav-link i.pull-left,
+.nav-pills .current-menu-item header ul li a i.pull-left,
+header ul li .nav-pills .current-menu-item a i.pull-left, header ul .current-menu-item li a i.pull-left, header ul li .current-menu-item a i.pull-left, header ul .current-menu-item .nav-link:focus i.pull-left,
+.nav-pills .current-menu-item header ul li a:focus i.pull-left,
+header ul li .nav-pills .current-menu-item a:focus i.pull-left, header ul .current-menu-item li a:focus i.pull-left, header ul li .current-menu-item a:focus i.pull-left, header ul .current-menu-item .nav-link:hover i.pull-left,
+.nav-pills .current-menu-item header ul li a:hover i.pull-left,
+header ul li .nav-pills .current-menu-item a:hover i.pull-left, header ul .current-menu-item li a:hover i.pull-left, header ul li .current-menu-item a:hover i.pull-left, aside .current_page_item a i.pull-left,
 aside .current-cat a i.pull-left {
   margin-right: .3em;
 }
 
 .fa.pull-right, .nav-pills .current-menu-item .nav-link i.pull-right,
-aside ul .current-menu-item .nav-link i.pull-right,
-.nav-pills .current-menu-item aside ul li a i.pull-right,
-aside ul li .nav-pills .current-menu-item a i.pull-right, aside ul .current-menu-item li a i.pull-right, aside ul li .current-menu-item a i.pull-right, aside ul .current-menu-item .nav-link:focus i.pull-right,
-.nav-pills .current-menu-item aside ul li a:focus i.pull-right,
-aside ul li .nav-pills .current-menu-item a:focus i.pull-right, aside ul .current-menu-item li a:focus i.pull-right, aside ul li .current-menu-item a:focus i.pull-right, aside ul .current-menu-item .nav-link:hover i.pull-right,
-.nav-pills .current-menu-item aside ul li a:hover i.pull-right,
-aside ul li .nav-pills .current-menu-item a:hover i.pull-right, aside ul .current-menu-item li a:hover i.pull-right, aside ul li .current-menu-item a:hover i.pull-right, aside .current_page_item a i.pull-right,
+header ul .current-menu-item .nav-link i.pull-right,
+.nav-pills .current-menu-item header ul li a i.pull-right,
+header ul li .nav-pills .current-menu-item a i.pull-right, header ul .current-menu-item li a i.pull-right, header ul li .current-menu-item a i.pull-right, header ul .current-menu-item .nav-link:focus i.pull-right,
+.nav-pills .current-menu-item header ul li a:focus i.pull-right,
+header ul li .nav-pills .current-menu-item a:focus i.pull-right, header ul .current-menu-item li a:focus i.pull-right, header ul li .current-menu-item a:focus i.pull-right, header ul .current-menu-item .nav-link:hover i.pull-right,
+.nav-pills .current-menu-item header ul li a:hover i.pull-right,
+header ul li .nav-pills .current-menu-item a:hover i.pull-right, header ul .current-menu-item li a:hover i.pull-right, header ul li .current-menu-item a:hover i.pull-right, aside .current_page_item a i.pull-right,
 aside .current-cat a i.pull-right {
   margin-left: .3em;
 }
@@ -7383,15 +7383,15 @@ aside .current-cat a i.pull-right {
 }
 
 .fa-chevron-right:before, .nav-pills .current-menu-item .nav-link i:before,
-aside ul .current-menu-item .nav-link i:before,
-.nav-pills .current-menu-item aside ul li a i:before,
-aside ul li .nav-pills .current-menu-item a i:before, aside ul .current-menu-item li a i:before, aside ul li .current-menu-item a i:before, .nav-pills .current-menu-item .nav-link:focus i:before,
-aside ul .current-menu-item .nav-link:focus i:before,
-.nav-pills .current-menu-item aside ul li a:focus i:before,
-aside ul li .nav-pills .current-menu-item a:focus i:before, aside ul .current-menu-item li a:focus i:before, aside ul li .current-menu-item a:focus i:before, .nav-pills .current-menu-item .nav-link:hover i:before,
-aside ul .current-menu-item .nav-link:hover i:before,
-.nav-pills .current-menu-item aside ul li a:hover i:before,
-aside ul li .nav-pills .current-menu-item a:hover i:before, aside ul .current-menu-item li a:hover i:before, aside ul li .current-menu-item a:hover i:before, aside .current_page_item a i:before,
+header ul .current-menu-item .nav-link i:before,
+.nav-pills .current-menu-item header ul li a i:before,
+header ul li .nav-pills .current-menu-item a i:before, header ul .current-menu-item li a i:before, header ul li .current-menu-item a i:before, .nav-pills .current-menu-item .nav-link:focus i:before,
+header ul .current-menu-item .nav-link:focus i:before,
+.nav-pills .current-menu-item header ul li a:focus i:before,
+header ul li .nav-pills .current-menu-item a:focus i:before, header ul .current-menu-item li a:focus i:before, header ul li .current-menu-item a:focus i:before, .nav-pills .current-menu-item .nav-link:hover i:before,
+header ul .current-menu-item .nav-link:hover i:before,
+.nav-pills .current-menu-item header ul li a:hover i:before,
+header ul li .nav-pills .current-menu-item a:hover i:before, header ul .current-menu-item li a:hover i:before, header ul li .current-menu-item a:hover i:before, aside .current_page_item a i:before,
 aside .current_page_item a:focus i:before,
 aside .current_page_item a:hover i:before,
 aside .current-cat a i:before,
@@ -9648,29 +9648,29 @@ header#intro .brand h1 a {
   text-decoration: none;
 }
 
-aside .widgets {
+header .widgets {
   padding-bottom: 1rem;
   padding-top: 0.5rem;
 }
 
-aside .widgets h5 {
+header .widgets h5 {
   text-transform: uppercase;
 }
 
-aside ul > li {
+header ul > li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .nav-pills .current-menu-item .nav-link,
-aside ul .current-menu-item .nav-link,
-.nav-pills .current-menu-item aside ul li a,
-aside ul .current-menu-item li a, aside ul li .current-menu-item a, .nav-pills .current-menu-item .nav-link:focus,
-aside ul .current-menu-item .nav-link:focus,
-.nav-pills .current-menu-item aside ul li a:focus,
-aside ul .current-menu-item li a:focus, aside ul li .current-menu-item a:focus, .nav-pills .current-menu-item .nav-link:hover,
-aside ul .current-menu-item .nav-link:hover,
-.nav-pills .current-menu-item aside ul li a:hover,
-aside ul .current-menu-item li a:hover, aside ul li .current-menu-item a:hover, aside .current_page_item a,
+header ul .current-menu-item .nav-link,
+.nav-pills .current-menu-item header ul li a,
+header ul .current-menu-item li a, header ul li .current-menu-item a, .nav-pills .current-menu-item .nav-link:focus,
+header ul .current-menu-item .nav-link:focus,
+.nav-pills .current-menu-item header ul li a:focus,
+header ul .current-menu-item li a:focus, header ul li .current-menu-item a:focus, .nav-pills .current-menu-item .nav-link:hover,
+header ul .current-menu-item .nav-link:hover,
+.nav-pills .current-menu-item header ul li a:hover,
+header ul .current-menu-item li a:hover, header ul li .current-menu-item a:hover, aside .current_page_item a,
 aside .current_page_item a:focus,
 aside .current_page_item a:hover,
 aside .current-cat a,
@@ -9687,15 +9687,15 @@ aside .current-cat a:hover {
 }
 
 .nav-pills .current-menu-item .nav-link i,
-aside ul .current-menu-item .nav-link i,
-.nav-pills .current-menu-item aside ul li a i,
-aside ul .current-menu-item li a i, aside ul li .current-menu-item a i, .nav-pills .current-menu-item .nav-link:focus i,
-aside ul .current-menu-item .nav-link:focus i,
-.nav-pills .current-menu-item aside ul li a:focus i,
-aside ul .current-menu-item li a:focus i, aside ul li .current-menu-item a:focus i, .nav-pills .current-menu-item .nav-link:hover i,
-aside ul .current-menu-item .nav-link:hover i,
-.nav-pills .current-menu-item aside ul li a:hover i,
-aside ul .current-menu-item li a:hover i, aside ul li .current-menu-item a:hover i, aside .current_page_item a i,
+header ul .current-menu-item .nav-link i,
+.nav-pills .current-menu-item header ul li a i,
+header ul .current-menu-item li a i, header ul li .current-menu-item a i, .nav-pills .current-menu-item .nav-link:focus i,
+header ul .current-menu-item .nav-link:focus i,
+.nav-pills .current-menu-item header ul li a:focus i,
+header ul .current-menu-item li a:focus i, header ul li .current-menu-item a:focus i, .nav-pills .current-menu-item .nav-link:hover i,
+header ul .current-menu-item .nav-link:hover i,
+.nav-pills .current-menu-item header ul li a:hover i,
+header ul .current-menu-item li a:hover i, header ul li .current-menu-item a:hover i, aside .current_page_item a i,
 aside .current_page_item a:focus i,
 aside .current_page_item a:hover i,
 aside .current-cat a i,
@@ -9704,11 +9704,11 @@ aside .current-cat a:hover i {
   margin-left: 0.3rem;
 }
 
-.nav-pills .nav-link, aside ul .nav-link, aside ul li a, aside ul .nav-link, aside ul li a, aside ul li a {
+.nav-pills .nav-link, header ul .nav-link, header ul li a, aside ul .nav-link, aside header ul li a, header aside ul li a, aside ul li a {
   padding: 0.5rem 0;
 }
 
-nav .nav-pills > li, nav aside ul > li, aside nav ul > li {
+nav .nav-pills > li, nav header ul > li, header nav ul > li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
 }
@@ -9719,7 +9719,7 @@ nav .nav-pills > li, nav aside ul > li, aside nav ul > li {
   padding-right: 0;
 }
 
-.sub-menu li a.nav-link, .sub-menu aside ul li a, aside ul .sub-menu li a {
+.sub-menu li a.nav-link, .sub-menu header ul li a, header ul .sub-menu li a {
   padding: 0.2em 1em;
   font-size: 0.9rem;
 }
