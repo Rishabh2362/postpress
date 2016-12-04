@@ -32,6 +32,17 @@ function postpress_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'title-tag' );
+	add_theme_support( 'custom-logo', array(
+		'flex-width'    => false,
+		'width'         => 285,
+		'flex-height'    => false,
+		'height'        => 130,
+		'header-text' => array( 'site-title', 'site-description' ),
+	) );
+	$custom_bg_args = array(
+		'default-color' => 'e0e0e0',
+	);
+	add_theme_support( 'custom-background', $custom_bg_args );
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'postpress' ),
 	) );
@@ -40,7 +51,7 @@ function postpress_setup() {
 /*
  * Removes the class "tag" from the body_class array.
  * Because it conflicts with Bootstrap 4 .tag class.
- */ 
+ */
 add_filter( 'body_class', 'adjust_body_class' );
 function adjust_body_class( $classes ) {
 	foreach ( $classes as $key => $value ) {
@@ -121,23 +132,6 @@ function postpress_enqueue_comment_reply() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'postpress_enqueue_comment_reply' );
-
-/*****************************
-WP Theme Check Recommendations
-******************************/
-$custom_header_args = array(
-	'flex-width'    => false,
-	'width'         => 285,
-	'flex-height'    => false,
-	'height'        => 130,
-	'default-image' => '',
-);
-add_theme_support( 'custom-header', $custom_header_args );
-
-$custom_bg_args = array(
-	'default-color' => 'e0e0e0',
-);
-add_theme_support( 'custom-background', $custom_bg_args );
 
 /*  This loads a nicer fonts and styles for the WYSIWYG editor
 	http://codex.wordpress.org/Function_Reference/add_editor_style
