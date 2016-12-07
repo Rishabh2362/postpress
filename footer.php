@@ -22,7 +22,7 @@
     jQuery(document).ready(function() {
 	    jQuery('nav li').addClass('nav-item');
 	    jQuery('nav a').addClass('nav-link');
-	    console.log('sfsdf');
+	    //console.log('sfsdf');
 	});
 
     </script>
