@@ -17,17 +17,17 @@
     @include make-gutters($gutters);
   }
 
-  $breakpoint-counter: 0;
   @each $breakpoint in map-keys($breakpoints) {
-    $breakpoint-counter: ($breakpoint-counter + 1);
+    $infix: breakpoint-infix($breakpoint, $breakpoints);
 
     // Allow columns to stretch full width below their breakpoints
-    .col-#{$breakpoint} {
-      @extend %grid-column;
-    }
-
     @for $i from 1 through $columns {
-      .col-#{$breakpoint}-#{$i} {
+      .col#{$infix}-#{$i} {
+        @extend %grid-column;
+      }
+    }
+    @if $enable-flex {
+      .col#{$infix} {
         @extend %grid-column;
       }
     }
@@ -35,22 +35,26 @@
     @include media-breakpoint-up($breakpoint, $breakpoints) {
       // Provide basic `.col-{bp}` classes for equal-width flexbox columns
       @if $enable-flex {
-        .col-#{$breakpoint} {
+        .col#{$infix} {
           flex-basis: 0;
           flex-grow: 1;
           max-width: 100%;
         }
+        .col#{$infix}-auto {
+          flex: 0 0 auto;
+          width: auto;
+        }
       }
 
       @for $i from 1 through $columns {
-        .col-#{$breakpoint}-#{$i} {
+        .col#{$infix}-#{$i} {
           @include make-col($i, $columns);
         }
       }
 
       @each $modifier in (pull, push) {
         @for $i from 0 through $columns {
-          .#{$modifier}-#{$breakpoint}-#{$i} {
+          .#{$modifier}#{$infix}-#{$i} {
             @include make-col-modifier($modifier, $i, $columns)
           }
         }
@@ -58,8 +62,8 @@
 
       // `$columns - 1` because offsetting by the width of an entire row isn't possible
       @for $i from 0 through ($columns - 1) {
-        @if $breakpoint-counter != 1 or $i != 0 { // Avoid emitting useless .offset-xs-0
-          .offset-#{$breakpoint}-#{$i} {
+        @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-xs-0
+          .offset#{$infix}-#{$i} {
             @include make-col-modifier(offset, $i, $columns)
           }
         }
