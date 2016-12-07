@@ -40,10 +40,10 @@
 				<div id="skip"><a href="#list-posts"><?php esc_html_e( 'Skip to Main Content', 'postpress' ) ?></a></div>
 				<div class="brand" class="text-center">
 					<?php
-					if ( function_exists( 'the_custom_logo' ) ) {
+					if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
 							the_custom_logo();
 						} else { ?>
-						<h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+						<h1><a href="<?php echo esc_url( home_url( ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 						<p class="lead"><?php bloginfo( 'description' ); ?></p>
 					<?php } ?>
 				</div>

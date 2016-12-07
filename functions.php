@@ -68,7 +68,7 @@ function postpress_primary_sidebar_widgets_init() {
 	$args_sidebar = array(
 		'name' => __( 'Primary Sidebar','postpress' ),
 		'id' => 'primary-sidebar',
-		'description' => __( 'Add widgets here and these will show right below your main side menu. Ideal for listing pages, archives or recent posts.','postpress' ),
+		'description' => __( 'Add widgets here and these will show right below your main menu. Ideal for listing pages, archives or recent posts.','postpress' ),
 		'before_widget' => '<div class="widgets">',
 		'after_widget' => '</div>',
 		'before_title' => '<h5>',
@@ -84,7 +84,7 @@ function postpress_secondary_sidebar_widgets_init() {
 	$args_sidebar = array(
 		'name' => __( 'Secondary Sidebar','postpress' ),
 		'id' => 'secondary-sidebar',
-		'description' => __( 'Add widgets here and these will show on the opposite side of your main menu. Ideal for listing pages, archives or recent posts.','postpress' ),
+		'description' => __( 'Add widgets here and these will show on the opposite side of your main content. Ideal for listing pages, archives or recent posts.','postpress' ),
 		'before_widget' => '<div class="widgets">',
 		'after_widget' => '</div>',
 		'before_title' => '<h5>',
