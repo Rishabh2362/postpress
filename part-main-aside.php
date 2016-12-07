@@ -9,32 +9,22 @@
 ?>
 <?php
 
-//$socialicons = array('icon1_link' => 'fa-facebook-square', );
-
-if ( get_theme_mod( 'icon1_link') ) { ?>
-<a href="<?php echo esc_url(get_theme_mod('icon1_link')); ?>" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
-<?php } 
-if (get_theme_mod('icon2_link')) { ?>
-<a href="<?php echo esc_url(get_theme_mod('icon2_link')); ?>" target="_blank"><i class="fa fa-twitter-square fa-lg"></i></a>
-<?php } 
-if (get_theme_mod('icon3_link')) { ?>
-<a href="<?php echo esc_url(get_theme_mod('icon3_link')); ?>" target="_blank"><i class="fa fa-google-plus-square fa-lg"></i></a>
-<?php } 
-if (get_theme_mod('icon4_link')) { ?>
-<a href="<?php echo esc_url(get_theme_mod('icon4_link')); ?>" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
-<?php } 
-if (get_theme_mod('icon5_link')) { ?>
-<a href="<?php echo esc_url(get_theme_mod('icon5_link')); ?>" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a>
-<?php } 
-if (get_theme_mod('icon6_link')) { ?>
-<a href="<?php echo esc_url(get_theme_mod('icon6_link')); ?>" target="_blank"><i class="fa fa-youtube-square fa-lg"></i></a>
-<?php } 
-if (get_theme_mod('icon7_link')) { ?>
-<a href="<?php echo esc_url(get_theme_mod('icon7_link')); ?>" target="_blank"><i class="fa fa-pinterest-square fa-lg"></i></a>
-<?php } 
-if (get_theme_mod('icon8_link')) { ?>
-<a href="<?php echo esc_url(get_theme_mod('icon8_link')); ?>" target="_blank"><i class="fa fa-tumblr-square fa-lg"></i></a>
-<?php } ?>
+$socialicons = array(
+	'icon1_link' => 'fa-facebook-square',
+	'icon2_link' => 'fa-twitter-square',
+	'icon3_link' => 'fa-google-plus-square',
+	'icon4_link' => 'fa-instagram',
+	'icon5_link' => 'fa-linkedin-square',
+	'icon6_link' => 'fa-youtube-square',
+	'icon7_link' => 'fa-pinterest-square',
+	'icon8_link' => 'fa-tumblr-square',
+);
+for ( $i = 1; $i <= 8; $i++ ){
+	if ( get_theme_mod( 'icon'.$i.'_link') ) { ?>
+		<a href="<?php echo esc_url( get_theme_mod( 'icon'.$i.'_link' ) ); ?>" target="_blank"><i class="fa <?php echo $socialicons[ 'icon'.$i.'_link' ]; ?> fa-lg"></i></a>
+	<?php }
+}
+?>
 
 <?php if ( is_active_sidebar( 'primary-sidebar' )  ) : ?>
 <div class="hidden-lg-up">
