@@ -7,13 +7,14 @@
   display: block;
   margin-bottom: $card-spacer-y;
   background-color: $card-bg;
-  // border: $card-border-width solid $card-border-color;
-  @include border-radius($card-border-radius);
   border: $card-border-width solid $card-border-color;
+  @include border-radius($card-border-radius);
 }
 
 .card-block {
-  @include clearfix;
+  @if (not $enable-flex) {
+    @include clearfix;
+  }
   padding: $card-spacer-x;
 }
 
@@ -68,7 +69,9 @@
 //
 
 .card-header {
-  @include clearfix;
+  @if (not $enable-flex) {
+    @include clearfix;
+  }
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
   background-color: $card-cap-bg;
@@ -80,7 +83,9 @@
 }
 
 .card-footer {
-  @include clearfix;
+  @if (not $enable-flex) {
+    @include clearfix;
+  }
   padding: $card-spacer-y $card-spacer-x;
   background-color: $card-cap-bg;
   border-top: $card-border-width solid $card-border-color;
