@@ -25,7 +25,7 @@
 				<small>
 					<?php
 					$url1 = 'http://www.isabellegarcia.me';
-					$link = sprintf( wp_kses( __( 'PostPress, a WordPress Theme by <a href="%1$s" target="_blank">@aicragellebasi</a>', 'postpress' ), array(  'a' => array( 'href' => array() ) ) ), esc_url( $url1 ), esc_url( $url2 ) );
+					$link = sprintf( wp_kses( __( 'PostPress, a WordPress Theme by <a href="%1$s" target="_blank">@aicragellebasi</a>', 'postpress' ), array(  'a' => array( 'href' => array() ) ) ), esc_url( $url1 ) );
 					echo $link;
 					?>
 					</em>
