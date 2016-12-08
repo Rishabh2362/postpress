@@ -12,12 +12,10 @@
 .custom-control {
   position: relative;
   display: inline-block;
+  min-height: (1rem * $line-height-base);
   padding-left: $custom-control-gutter;
+  margin-right: $custom-control-spacer-x;
   cursor: pointer;
-
-  + .custom-control {
-    margin-left: $custom-control-spacer-x;
-  }
 }
 
 .custom-control-input {
@@ -61,7 +59,7 @@
 
 .custom-control-indicator {
   position: absolute;
-  top: .25rem;
+  top: (($line-height-base - $custom-control-indicator-size) / 2);
   left: 0;
   display: block;
   width: $custom-control-indicator-size;
@@ -132,7 +130,8 @@
 // Replaces the browser default select with a custom one, mostly pulled from
 // http://primercss.io.
 //
-// Includes IE9-specific hacks (noted by ` \9`).
+// Includes hacks for IE9 (noted by ` \9`), which may apply to other versions of
+// IE, but not with any adverse affects.
 
 .custom-select {
   display: inline-block;
@@ -201,6 +200,7 @@
   display: inline-block;
   max-width: 100%;
   height: $custom-file-height;
+  margin-bottom: 0;
   cursor: pointer;
 }
 
