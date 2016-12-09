@@ -13,20 +13,6 @@
 
     </div><!-- /.container -->
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script>
-    
-    jQuery(document).ready(function() {
-	    jQuery('nav li').addClass('nav-item');
-	    jQuery('nav a').addClass('nav-link');
-	    //console.log('sfsdf');
-	});
-
-    </script>
-
     <?php wp_footer(); ?>
 
   </body>
