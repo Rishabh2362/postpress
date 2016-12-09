@@ -41,6 +41,13 @@ function postpress_setup() {
 		'height'        => 130,
 		'header-text' => array( 'site-title', 'site-description' ),
 	) );
+	$custom_header_args = array(
+		'flex-width'    => false,
+		'flex-height'    => false,
+		'default-image' => get_template_directory_uri() . '/img/header-default.png',
+		'uploads'       => true,
+	);
+	add_theme_support( 'custom-header', $custom_header_args );
 	$custom_bg_args = array(
 		'default-color' => 'e0e0e0',
 	);

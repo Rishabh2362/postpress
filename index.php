@@ -18,6 +18,8 @@
 		<div class="col-md-9" id="content">
 			<?php get_template_part( 'part' , 'main-top' ); ?>
 
+			<?php get_template_part( 'part' , 'main-header' ); ?>
+
 			<section id="list-posts" role="main">
 				<?php get_template_part( 'part' , 'main-content' ); ?>
 			</section>
