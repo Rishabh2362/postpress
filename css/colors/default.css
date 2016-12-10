@@ -21,5 +21,5 @@ Black
 
 .card-primary .card-title a:hover, #list-posts article.sticky .card-title a:hover,
 .card-primary .text-muted, #list-posts article.sticky .text-muted{
-  color: #DBDBDB !important; //50% dark
+  color: #EFEFEF !important; //50% dark
 }
