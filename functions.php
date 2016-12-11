@@ -37,15 +37,17 @@ function postpress_setup() {
 	add_theme_support( 'custom-logo', array(
 		'flex-width'    => false,
 		'width'         => 285,
-		'flex-height'    => false,
+		'flex-height'   => false,
 		'height'        => 130,
-		'header-text' => array( 'site-title', 'site-description' ),
+		'header-text' 	=> array( 'site-title', 'site-description' ),
 	) );
 	$custom_header_args = array(
 		'flex-width'    => false,
-		'flex-height'    => false,
+		'flex-height'   => false,
 		'default-image' => get_template_directory_uri() . '/img/header-default.png',
 		'uploads'       => true,
+		'width'			=> 1704,
+		'heigh'			=> 442,
 	);
 	add_theme_support( 'custom-header', $custom_header_args );
 	$custom_bg_args = array(
