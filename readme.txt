@@ -75,12 +75,13 @@ Dekko (Google Fonts), Sorkin Type
 Open Font license
 https://www.google.com/fonts/specimen/Dekko
 
-Image
+Images
 
-Thumbnail in the Screenshot, Copyright Isabelle Garcia
-Licensed under the terms of GPL 
-https://goo.gl/photos/vEnj6knFhKgTwwjB7
+All images in Screenshot, Copyright Isabelle Garcia
+http://isabellegarcia.com
 
+Default image for header, Copyright Isabelle Garcia
+http://isabellegarcia.com
 
 == Description ==
 
