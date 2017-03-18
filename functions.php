@@ -3,7 +3,7 @@
  * PostPress functions and definitions
  *
  * @package WordPress
- * @subpackage PostPress 1.0.1
+ * @subpackage PostPress 1.0.2
  * @since PostPress 1.0.0
  */
 
@@ -20,7 +20,7 @@ include_once( 'postpress-sanitize.php' );
 function postpress_scripts() {
 	wp_enqueue_style( 'postpress-styles.css',  get_template_directory_uri().'/css/postpress-styles.css', '1.0.0', true );
 	wp_enqueue_script( 'tether', get_template_directory_uri() . '/js/tether.min.js', array( 'jquery' ), '1.0.0', true );
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '1.0.1', true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '1.0.2', true );
 	wp_enqueue_script( 'ie10-viewport-bug-workaround', get_template_directory_uri() . '/js/ie10-viewport-bug-workaround.js', array( 'jquery' ), '1.0.0', true );
 	wp_enqueue_script( 'pp-scripts', get_template_directory_uri() . '/js/ppscripts.js', array( 'jquery' ), '1.0.0', true );
 }
