@@ -3,7 +3,7 @@
  * Include WordPress Loop
  *
  * @package WordPress
- * @subpackage PostPress 1.0.2
+ * @subpackage PostPress 1.0.3
  * @since PostPress 1.0.0
  */
 ?>

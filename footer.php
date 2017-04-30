@@ -5,7 +5,7 @@
  * Contains footer content and the closing of .container-fluid div opened in header.php
  *
  * @package WordPress
- * @subpackage PostPress 1.0.2
+ * @subpackage PostPress 1.0.3
  * @since PostPress 1.0.0
  */
 ?>
