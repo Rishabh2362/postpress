@@ -18,12 +18,15 @@
 		<div class="col-md-9" id="content">
 			<?php get_template_part( 'part' , 'main-top' ); ?>
 
-			<?php get_template_part( 'part' , 'main-header' ); ?>
+			<section role="banner">
+			<?php get_template_part( 'part' , 'main-header' ); ?>	
+			</section>
+			
 
 			<section id="list-posts" role="main">
 				<?php get_template_part( 'part' , 'main-content' ); ?>
 			</section>
-			<section id="credits">
+			<section id="credits" role="contentinfo">
 				<small>
 					<?php
 					$url1 = 'http://www.isabellegarcia.me';

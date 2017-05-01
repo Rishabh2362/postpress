@@ -36,7 +36,7 @@
 		<div class="row">
 
 			<!--header / main sidebar-->
-			<header class="col-lg-3" id="intro" role="navigation">
+			<header class="col-lg-3" id="intro">
 				<div id="skip"><a href="#list-posts"><?php esc_html_e( 'Skip to Main Content', 'postpress' ) ?></a></div>
 				<div class="brand" class="text-center">
 					<?php
@@ -49,49 +49,33 @@
 				</div>
 				<hr>
 				<!-- navbar for iPad hor and desktops  -->
-				<?php
-				$defaults = array(
-					'theme_location'  => 'primary',
-					'container'       => 'nav',
-					'container_class' => 'hidden-md-down',
-					'container_id'    => 'main-nav-pills',
-					'menu_class'      => 'nav nav-pills nav-stacked',
-					'menu_id'         => '',
-					'echo'            => true,
-					'fallback_cb'     => 'wp_page_menu',
-					'before'          => '',
-					'after'           => '',
-					'link_before'     => '',
-					'link_after'      => '<i></i>',
-					'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-					'depth'           => 0,
-					'walker'          => ''
-				);
-				wp_nav_menu( $defaults );
-				?>
+				<nav class="hidden-md-down" id="main-nav-pills" role="navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'postpress' ); ?>">
+					<?php
+					$defaults = array(
+						'theme_location'  => 'primary',
+						'container'       => false,
+						'menu_class'      => 'nav nav-pills nav-stacked',
+						'menu_id'         => '',
+						'echo'            => true,
+						'fallback_cb'     => 'wp_page_menu',
+						'before'          => '',
+						'after'           => '',
+						'link_before'     => '',
+						'link_after'      => '<i></i>',
+						'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+						'depth'           => 0,
+						'walker'          => '',
+					);
+					wp_nav_menu( $defaults );
+					?>	
+				</nav>
+				
 				<!-- open collapsed navbar for small device and iPad vert  -->
 				<div class="hidden-lg-up btn-toggle-menu">
 					<div data-toggle="collapse" data-target="#responsive-nav" class="button-collapse">
 						<button class="navbar-brand"><?php esc_html_e( 'menu', 'postpress' ) ?></button>
 					</div>
 				</div>
-				<!--/collapsed content: navbar for mobiles and iPad vert.-->
-				<!--nav class="navbar-collapse collapse inverse hidden-lg-up" id="responsive-nav">
-					<ul class="nav nav-pills nav-stacked">
-						<li class="nav-item">
-							<a class="nav-link active" href="#">Active</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Another link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link disabled" href="#">Disabled</a>
-						</li>
-					</ul>
-				</nav-->
 				<?php
 				$defaults = array(
 					'theme_location'  => 'primary',
@@ -108,7 +92,7 @@
 					'link_after'      => '',
 					'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 					'depth'           => 0,
-					'walker'          => ''
+					'walker'          => '',
 				);
 				wp_nav_menu( $defaults );
 				?>
