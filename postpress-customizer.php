@@ -38,8 +38,9 @@ function postpress_customize_register( $wp_customize ) {
 						'settings'       => 'css_sheet',
 						'type'           => 'select',
 						'choices'        => array(
-							'default' 		=> __( 'Default (Gold Yellow)', 'postpress' ),
-							'airy' 			=> __( 'Airy', 'postpress' ),
+							//'default' 		=> __( 'Default (Gold Yellow)', 'postpress' ),
+							'default' 		=> __( 'Default (Airy Blue)', 'postpress' ),
+							'gold' 			=> __( 'Gold', 'postpress' ),
 							'bubblegum' 	=> __( 'Bubblegum', 'postpress' ),
 							'pinky' 		=> __( 'Pinky', 'postpress' ),
 							'plum' 			=> __( 'Plum', 'postpress' ),
@@ -325,10 +326,10 @@ Load css selected
 function postpress_load_css_colors() {
 	$css = array(
 		'default' => array(
-			'file' => 'default.css',
-		),
-		'airy' => array(
 			'file' => 'airy.css',
+		),
+		'gold' => array(
+			'file' => 'gold.css',
 		),
 		'bubblegum' => array(
 			'file' => 'bubblegum.css',
