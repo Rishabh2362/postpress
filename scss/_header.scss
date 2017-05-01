@@ -41,6 +41,27 @@ header{ //make sure input texts in sidebars do not push content
 			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 		}
 	}
+	.btn-toggle-menu{
+		//@extend .nav;
+		//@extend .nav-pills;
+		//@extend .nav-stacked;
+		.button-collapse{
+			button{
+				 //@extend .nav-link;
+				 margin: 0;
+				 padding: 0;
+				 border: none;
+				 background-color: transparent;
+			}
+		}
+	}
+	button{
+		@extend .nav;
+		@extend .nav-pills;
+		@extend .nav-stacked;
+	  	&.navbar-brand{
+	  	}
+	}
 }
 
 

@@ -71,8 +71,8 @@
 				?>
 				<!-- open collapsed navbar for small device and iPad vert  -->
 				<div class="hidden-lg-up btn-toggle-menu">
-					<div data-toggle="collapse" data-target="#responsive-nav" id="">
-						<a href="#" class="navbar-brand"><?php esc_html_e( 'menu', 'postpress' ) ?></a>
+					<div data-toggle="collapse" data-target="#responsive-nav" class="button-collapse">
+						<button class="navbar-brand"><?php esc_html_e( 'menu', 'postpress' ) ?></button>
 					</div>
 				</div>
 				<!--/collapsed content: navbar for mobiles and iPad vert.-->
