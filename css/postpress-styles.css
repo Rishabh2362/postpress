@@ -117,7 +117,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helv
 
 [tabindex="-1"]:focus { outline: none !important; }
 
-h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: .5rem; }
+h1, h2, h3, h4, #list-posts article h2.card-title, #list-posts article.sticky h2.card-title, h5, h6 { margin-top: 0; margin-bottom: .5rem; }
 
 p { margin-top: 0; margin-bottom: 1rem; }
 
@@ -185,7 +185,7 @@ output { display: inline-block; }
 
 [hidden] { display: none !important; }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-bottom: 0.5rem; font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit; }
+h1, h2, h3, h4, #list-posts article h2.card-title, #list-posts article.sticky h2.card-title, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-bottom: 0.5rem; font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit; }
 
 h1, .h1 { font-size: 2.5rem; }
 
@@ -193,7 +193,7 @@ h2, .h2 { font-size: 2rem; }
 
 h3, .h3 { font-size: 1.75rem; }
 
-h4, .h4 { font-size: 1.5rem; }
+h4, #list-posts article h2.card-title, #list-posts article.sticky h2.card-title, .h4 { font-size: 1.5rem; }
 
 h5, .h5 { font-size: 1.25rem; }
 
@@ -4148,7 +4148,7 @@ body { background-color: #e0e0e0; }
 
 input.submit { display: inline; float: right; max-width: 150px; }
 
-#list-posts article .card-title a:hover { text-decoration: none; }
+#list-posts article h2.card-title a:hover { text-decoration: none; }
 
 #list-posts article .card-img-overlay { max-height: 130px; }
 
@@ -4178,7 +4178,7 @@ input.submit { display: inline; float: right; max-width: 150px; }
 
 #list-posts article.sticky a { color: black; }
 
-#list-posts article.sticky h4.card-title a:hover { color: #342403 !important; text-decoration: none; }
+#list-posts article.sticky h2.card-title a:hover { color: #342403 !important; text-decoration: none; }
 
 #list-posts article.sticky p, #list-posts article.sticky small, #list-posts article.sticky .wp-caption-text { color: black; }
 

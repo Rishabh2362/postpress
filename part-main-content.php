@@ -14,11 +14,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="card-header">
-		<h4 class="card-title">
+		<h2 class="card-title">
 				<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 						<?php the_title(); ?>
 				</a>
-		</h4>
+		</h2>
 		<h6 class="card-subtitle text-muted"><i class="fa fa-calendar-o"></i> <?php the_time( __( 'F jS, Y', 'postpress' ) ) ?> </h6>
 	</div>
 
@@ -104,7 +104,7 @@ if ( $prev_link || $next_link ) { ?>
 <?php else : ?>
 	<article class="sticky">
 		<div class="card-header">
-			<h4 class="card-title"><?php esc_html_e( 'Sorry...','postpress' ); ?></h4>
+			<h2 class="card-title"><?php esc_html_e( 'Sorry...','postpress' ); ?></h2>
 			<h6 class="card-subtitle text-muted"><i class="fa fa-exclamation-circle"></i> <?php esc_html_e( 'Looks like something went wrong','postpress' ); ?> </h6>
 		</div>
 		<div class="card-block">
