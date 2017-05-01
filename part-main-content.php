@@ -86,7 +86,7 @@ $prev_link = get_previous_posts_link();
 $next_link = get_next_posts_link();
 // checking if there is next or previous. If yes, show the nav.
 if ( $prev_link || $next_link ) { ?>
-	<nav class="nav nav-inline" id="prev-next">
+	<nav class="nav nav-inline" id="prev-next" role="navigation" aria-label="<?php esc_attr_e( 'Blog Navigation', 'postpress' ); ?>">
 		<?php next_posts_link( '<i class="fa fa-chevron-left"></i> '.__( 'Previous Posts', 'postpress' ) ); ?>
 		<?php previous_posts_link( __( 'Next Posts', 'postpress' ).' <i class="fa fa-chevron-right"></i>' ); ?>
 	</nav>
@@ -94,7 +94,7 @@ if ( $prev_link || $next_link ) { ?>
 
 <!-- Navigation within single -->
 <?php  if ( is_single() ) {  ?>
-	<nav class="nav nav-inline" id="prev-next">
+	<nav class="nav nav-inline" id="prev-next" role="navigation" aria-label="<?php esc_attr_e( 'Post Navigation', 'postpress' ); ?>">
 		<?php next_post_link( '%link', '<i class="fa fa-chevron-left"></i> '.__( 'Prev', 'postpress' ), true ); ?>
 		<?php previous_post_link( '%link', __( 'Next', 'postpress' ).' <i class="fa fa-chevron-right"></i>', true ); ?>
 	</nav>
