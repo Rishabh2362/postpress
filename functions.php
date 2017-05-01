@@ -121,10 +121,26 @@ function postpress_top_widgets_init() {
 }
 add_action( 'widgets_init', 'postpress_top_widgets_init' );
 
-function excerpt_more_link( $more ) {
-	return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( '[+]', 'postpress' ) . '</a>';
+
+if ( ! function_exists( 'excerpt_more_link' ) && ! is_admin() ) :
+/**
+ * Replaces "[...]" (appended to automatically generated excerpts) with ... and a 'Continue reading' link.
+ * Be sure to change the text domain to the one matching your theme.
+ *
+ * @since PostPress 1.0.3
+ * @link https://github.com/wpaccessibility/a11ythemepatterns/blob/master/read-more-links/functions.php 
+ * @return string 'Continue reading' link prepended with an ellipsis.
+ */
+function postpress_excerpt_more( $more ) {
+	$link = sprintf( '<a href="%1$s" class="read-more">%2$s</a>',
+		esc_url( get_permalink( get_the_ID() ) ),
+		/* translators: %s: Name of current post */
+		sprintf( __( 'Continue reading %s', 'postpress' ), '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>' )
+		);
+	return ' &hellip; ' . $link;
 }
-add_filter( 'excerpt_more', 'excerpt_more_link' );
+add_filter( 'excerpt_more', 'postpress_excerpt_more' );
+endif;
 
 /* That's only if JetPack's is installed */
 /*
