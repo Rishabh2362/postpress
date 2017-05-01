@@ -135,5 +135,12 @@ This theme is built upon Bootstrap 3.
 = 1.0.2 =
 
 = 1.0.3 =
+* Menu toggle changed to <button>
+* Added a JS file for IE support Skip links : https://github.com/Automattic/_s/blob/master/js/skip-link-focus-fix.js
+* Invisible label added for search form
+* Headings hierarchy changed
+* Aria Landmark updated
+* Read more link updated to comply with accessibility standards
+* Default theme color changed to comply with limit color contrast
 
 
