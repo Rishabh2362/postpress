@@ -37,6 +37,9 @@ Sanitization Callbacks, Copyright (c) 2015, WordPress Theme Review Team
 Licensed under the terms of GNU General Public license
 https://github.com/WPTRT/code-examples/blob/master/customizer/sanitization-callbacks.php
 
+skip link focus fix
+https://github.com/Automattic/_s/blob/master/js/skip-link-focus-fix.js
+
 Fonts
 
 Delius (Google Fonts), copyright Natalia Raices
