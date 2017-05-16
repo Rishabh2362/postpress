@@ -4,8 +4,8 @@ Contributors: aicragellebasi
 Donate link: http://www.isabellegarcia.me/contact
 Tags: one-column, two-columns, three-columns, right-sidebar, grid-layout, custom-header, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, front-page-post-form, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, entertainment, news
 Requires at least: 3.4
-Tested up to: 1.0.3
-Stable tag: 1.0.3
+Tested up to: 1.0.4
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -142,5 +142,8 @@ This theme is built upon Bootstrap 3.
 * Aria Landmark updated
 * Read more link updated to comply with accessibility standards
 * Default theme color changed to comply with limit color contrast
+
+= 1.0.4 =
+* 
 
 
