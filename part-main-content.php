@@ -14,11 +14,25 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="card-header">
+	<?php if ( is_single() || is_page() ) { ?>
+		<h1 class="card-title">
+			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+					<?php the_title(); ?>
+			</a>
+		</h1>
+	<?php } else if ( is_archive() ) { ?>
+		<h1 class="card-title">
+			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+					<?php the_archive_title(); ?>
+			</a>
+		</h1>
+	<?php } else { ?>
 		<h2 class="card-title">
-				<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-						<?php the_title(); ?>
-				</a>
+			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+					<?php the_title(); ?>
+			</a>
 		</h2>
+	<?php } ?>
 		<p class="card-subtitle text-muted"><i class="fa fa-calendar-o"></i> <?php the_time( __( 'F jS, Y', 'postpress' ) ) ?> </p>
 	</div>
 

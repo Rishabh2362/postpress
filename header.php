@@ -42,12 +42,17 @@
 					<?php
 					if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
 							the_custom_logo();
-						} else { ?>
-						<h1><a href="<?php echo esc_url( home_url( ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+					} else {
+						if ( is_front_page() && is_home() ) : ?>
+							<h1><a href="<?php echo esc_url( home_url( ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+						<?php else : ?>
+							<p class="site-title"><a href="<?php echo esc_url( home_url( ) ); ?>"><?php bloginfo( 'name' ); ?></a></p>
+						<?php endif; ?>
 						<p class="lead"><?php bloginfo( 'description' ); ?></p>
 					<?php } ?>
 				</div>
 				<hr>
+
 				<!-- navbar for iPad hor and desktops  -->
 				<nav class="hidden-md-down" id="main-nav-pills" role="navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'postpress' ); ?>">
 					<?php

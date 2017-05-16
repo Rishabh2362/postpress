@@ -7,7 +7,7 @@ body { margin: 0; }
 
 article, aside, footer, header, nav, section { display: block; }
 
-h1 { font-size: 2em; margin: 0.67em 0; }
+h1, header#intro .brand p.site-title { font-size: 2em; margin: 0.67em 0; }
 
 figcaption, figure, main { display: block; }
 
@@ -117,7 +117,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helv
 
 [tabindex="-1"]:focus { outline: none !important; }
 
-h1, h2, h3, h4, #list-posts article h2.card-title, #list-posts article.sticky h2.card-title, h5, h6 { margin-top: 0; margin-bottom: .5rem; }
+h1, header#intro .brand p.site-title, h2, h3, h4, #list-posts article h2.card-title, #list-posts article h1.card-title, #list-posts article header#intro .brand p.card-title.site-title, header#intro .brand #list-posts article p.card-title.site-title, #list-posts article.sticky h2.card-title, h5, h6 { margin-top: 0; margin-bottom: .5rem; }
 
 p { margin-top: 0; margin-bottom: 1rem; }
 
@@ -185,15 +185,15 @@ output { display: inline-block; }
 
 [hidden] { display: none !important; }
 
-h1, h2, h3, h4, #list-posts article h2.card-title, #list-posts article.sticky h2.card-title, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-bottom: 0.5rem; font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit; }
+h1, header#intro .brand p.site-title, h2, h3, h4, #list-posts article h2.card-title, #list-posts article h1.card-title, #list-posts article header#intro .brand p.card-title.site-title, header#intro .brand #list-posts article p.card-title.site-title, #list-posts article.sticky h2.card-title, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-bottom: 0.5rem; font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit; }
 
-h1, .h1 { font-size: 2.5rem; }
+h1, header#intro .brand p.site-title, .h1 { font-size: 2.5rem; }
 
 h2, .h2 { font-size: 2rem; }
 
 h3, .h3 { font-size: 1.75rem; }
 
-h4, #list-posts article h2.card-title, #list-posts article.sticky h2.card-title, .h4 { font-size: 1.5rem; }
+h4, #list-posts article h2.card-title, #list-posts article h1.card-title, #list-posts article header#intro .brand p.card-title.site-title, header#intro .brand #list-posts article p.card-title.site-title, #list-posts article.sticky h2.card-title, .h4 { font-size: 1.5rem; }
 
 h5, .h5 { font-size: 1.25rem; }
 
@@ -4099,7 +4099,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover { color: #101112 !important; }
 
 header#intro { background-color: white; }
 
-header#intro .brand h1 a { text-decoration: none; }
+header#intro .brand h1 a, header#intro .brand p.site-title a { text-decoration: none; }
 
 header .widgets { padding-bottom: 1rem; padding-top: 0.5rem; }
 
@@ -4148,7 +4148,7 @@ body { background-color: #e0e0e0; }
 
 input.submit { display: inline; float: right; max-width: 150px; }
 
-#list-posts article h2.card-title a:hover { text-decoration: none; }
+#list-posts article h2.card-title a:hover, #list-posts article h1.card-title a:hover, #list-posts article header#intro .brand p.card-title.site-title a:hover, header#intro .brand #list-posts article p.card-title.site-title a:hover { text-decoration: none; }
 
 #list-posts article .card-img-overlay { max-height: 130px; }
 
