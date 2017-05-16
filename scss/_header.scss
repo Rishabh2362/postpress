@@ -42,17 +42,11 @@ header{ //make sure input texts in sidebars do not push content
 		}
 	}
 	.btn-toggle-menu{
-		//@extend .nav;
-		//@extend .nav-pills;
-		//@extend .nav-stacked;
-		.button-collapse{
-			button{
-				 //@extend .nav-link;
-				 margin: 0;
-				 padding: 0;
-				 border: none;
-				 background-color: transparent;
-			}
+		button.button-collapse{
+			margin: 0;
+			padding: 0;
+			border: none;
+			background-color: transparent;
 		}
 	}
 	button{

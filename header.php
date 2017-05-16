@@ -5,7 +5,7 @@
  * Displays all of the <head> section and everything up till #main
  *
  * @package WordPress
- * @subpackage PostPress 1.0.3
+ * @subpackage PostPress 1.0.4
  * @since PostPress 1.0.0
  */
 ?>
@@ -72,9 +72,9 @@
 				
 				<!-- open collapsed navbar for small device and iPad vert  -->
 				<div class="hidden-lg-up btn-toggle-menu">
-					<div data-toggle="collapse" data-target="#responsive-nav" class="button-collapse">
-						<button class="navbar-brand"><?php esc_html_e( 'menu', 'postpress' ) ?></button>
-					</div>
+					<button data-toggle="collapse" data-target="#responsive-nav" class="button-collapse">
+						<a href="#" class="navbar-brand"><?php esc_html_e( 'menu', 'postpress' ) ?></a>
+					</button>
 				</div>
 				<?php
 				$defaults = array(

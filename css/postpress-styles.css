@@ -4107,7 +4107,7 @@ header .widgets #sidebar > ul > li { padding-top: 1em; border-bottom: none; }
 
 header ul > li { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
-header .btn-toggle-menu .button-collapse button { margin: 0; padding: 0; border: none; background-color: transparent; }
+header .btn-toggle-menu button.button-collapse { margin: 0; padding: 0; border: none; background-color: transparent; }
 
 aside .widgets { padding-bottom: 1rem; padding-top: 0.5rem; }
 
