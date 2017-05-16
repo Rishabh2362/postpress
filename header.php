@@ -36,7 +36,7 @@
 		<div class="row">
 
 			<!--header / main sidebar-->
-			<header class="col-lg-3" id="intro">
+			<header class="col-lg-3" id="intro" role="banner">
 				<div id="skip"><a href="#list-posts"><?php esc_html_e( 'Skip to Main Content', 'postpress' ) ?></a></div>
 				<div class="brand" class="text-center">
 					<?php

@@ -15,10 +15,10 @@
 <div class="col-lg-9" id="main">
 	<div class="row">
 		<!--loop area-->
-		<div class="col-md-9" id="content">
+		<main class="col-md-9" id="content" role="main">
 			<?php get_template_part( 'part' , 'main-top' ); ?>
 
-			<section role="banner">
+			<section>
 			<?php get_template_part( 'part' , 'main-header' ); ?>	
 			</section>
 			
@@ -36,7 +36,7 @@
 					</em>
 				</small>
 			</section>
-		</div> <!-- / loop area-->
+		</main> <!-- / loop area-->
 
 		<!--begin secondary sidebar loading social icon-->
 		<div class="col-md-3" id="extras" role="complementary" aria-label="<?php _e( 'Secondary Sidebar', 'postpress' ); ?>">
