@@ -9,7 +9,7 @@
 ?>
 <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 	<div class="input-group">
-	  <label class="sr-only"><?php esc_html_e( 'Search for...', 'postpress' ) ?></label>
+	  <label class="sr-only" for="s"><?php esc_html_e( 'Search for...', 'postpress' ) ?></label>
 	  <input type="text" class="form-control" placeholder="<?php esc_attr_e( 'Search for...', 'postpress' ) ?>" name="s" id="s" >
 	  <span class="input-group-btn">
 		<button class="btn btn-secondary" type="button"><?php esc_html_e( 'Go!', 'postpress' ) ?></button>
