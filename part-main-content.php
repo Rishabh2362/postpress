@@ -19,7 +19,7 @@
 						<?php the_title(); ?>
 				</a>
 		</h2>
-		<h6 class="card-subtitle text-muted"><i class="fa fa-calendar-o"></i> <?php the_time( __( 'F jS, Y', 'postpress' ) ) ?> </h6>
+		<p class="card-subtitle text-muted"><i class="fa fa-calendar-o"></i> <?php the_time( __( 'F jS, Y', 'postpress' ) ) ?> </p>
 	</div>
 
 	<?php if ( is_single() || is_page() ) { ?>
@@ -105,7 +105,7 @@ if ( $prev_link || $next_link ) { ?>
 	<article class="sticky">
 		<div class="card-header">
 			<h2 class="card-title"><?php esc_html_e( 'Sorry...','postpress' ); ?></h2>
-			<h6 class="card-subtitle text-muted"><i class="fa fa-exclamation-circle"></i> <?php esc_html_e( 'Looks like something went wrong','postpress' ); ?> </h6>
+			<p class="card-subtitle text-muted"><i class="fa fa-exclamation-circle"></i> <?php esc_html_e( 'Looks like something went wrong','postpress' ); ?> </p>
 		</div>
 		<div class="card-block">
 			<p>
