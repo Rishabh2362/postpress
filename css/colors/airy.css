@@ -150,6 +150,14 @@ aside ul .nav-item.open li a:focus, aside ul li .nav-item.open a:focus, .nav-pil
   color: white;
 }
 
+.card-footer a, .card-header a{
+  color: #005CBF;
+}
+
+.card-footer a:hover, .card-header a:hover{
+  color: #0275d8;
+}
+
 .card-outline-primary {
   border-color: #0275d8;
 }

@@ -23,3 +23,11 @@ Black
 .card-primary .text-muted, #list-posts article.sticky .text-muted{
   //color: #EFEFEF !important; //50% dark
 }
+
+.card-footer a, .card-header a{
+  color: #005CBF;
+}
+
+.card-footer a:hover, .card-header a:hover{
+  color: #0275d8;
+}
