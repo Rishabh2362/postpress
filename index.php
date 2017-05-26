@@ -23,7 +23,7 @@
 			</section>
 			
 
-			<section id="list-posts" role="main">
+			<section id="list-posts">
 				<?php get_template_part( 'part' , 'main-content' ); ?>
 			</section>
 			<section id="credits" role="contentinfo">
