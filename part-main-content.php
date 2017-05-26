@@ -20,12 +20,6 @@
 					<?php the_title(); ?>
 			</a>
 		</h1>
-	<?php } else if ( is_archive() ) { ?>
-		<h1 class="card-title">
-			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-					<?php the_archive_title(); ?>
-			</a>
-		</h1>
 	<?php } else { ?>
 		<h2 class="card-title">
 			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
