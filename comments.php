@@ -5,7 +5,7 @@
  * The area of the page that contains comments and the comment form.
  *
  * @package WordPress
- * @subpackage PostPress 1.0.4
+ * @subpackage PostPress 1.0.5
  * @since PostPress 1.0.0.0
  */
 ?>
