@@ -18,7 +18,7 @@
 		<main class="col-md-9" id="content" role="main">
 			<?php get_template_part( 'part' , 'main-top' ); ?>
 
-			<section>
+			<section id="wp-header">
 			<?php get_template_part( 'part' , 'main-header' ); ?>	
 			</section>
 			

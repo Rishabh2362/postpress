@@ -135,7 +135,7 @@ aside ul .nav-item.open li a:focus, aside ul li .nav-item.open a:focus, .nav-pil
 }
 
 .card-primary, #list-posts article.sticky {
-  background-color: #0275d8;
+  background-color: #35A8FF;
   border-color: #0275d8;
 }
 
@@ -147,7 +147,7 @@ aside ul .nav-item.open li a:focus, aside ul li .nav-item.open a:focus, .nav-pil
 .card-inverse .card-link, #list-posts article.sticky .card-link, .card-inverse .card-text, #list-posts article.sticky .card-text, #list-posts article.sticky p, #list-posts article.sticky small, .card-inverse .card-subtitle, #list-posts article.sticky .card-subtitle, .card-inverse .card-blockquote .blockquote-footer, #list-posts article.sticky .card-blockquote .blockquote-footer,
 .card-inverse .card-header, #list-posts article.sticky .card-header, .card-inverse .card-footer, #list-posts article.sticky .card-footer, .card-inverse .card-title, #list-posts article.sticky .card-title, .card-inverse .card-blockquote, #list-posts article.sticky .card-blockquote,
 #list-posts article.sticky a{
-  color: white;
+  color: black;
 }
 
 .card-footer a, .card-header a{
@@ -214,7 +214,7 @@ a.text-primary:hover {
   color: #005CBF !important;
 }
 
-#list-posts article.sticky .card-footer {
+#list-posts article.sticky .card-footer, #list-posts article.sticky .card-header {
   background-color: #1C8FF2;
   border-top: 1px solid #0275d8;
 }
