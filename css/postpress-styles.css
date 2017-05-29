@@ -856,11 +856,11 @@ a.btn.disabled, fieldset[disabled] a.btn { pointer-events: none; }
 
 .btn-info { color: #fff; background-color: #5bc0de; border-color: #5bc0de; }
 
-.btn-info:hover { color: #fff; background-color: #31b0d5; border-color: #2aabd2; }
+.btn-info:hover { color: #fff; background-color: #31.0.6; border-color: #2aabd2; }
 
-.btn-info:focus, .btn-info.focus { color: #fff; background-color: #31b0d5; border-color: #2aabd2; }
+.btn-info:focus, .btn-info.focus { color: #fff; background-color: #31.0.6; border-color: #2aabd2; }
 
-.btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle { color: #fff; background-color: #31b0d5; border-color: #2aabd2; background-image: none; }
+.btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle { color: #fff; background-color: #31.0.6; border-color: #2aabd2; background-image: none; }
 
 .btn-info:active:hover, .btn-info:active:focus, .btn-info:active.focus, .btn-info.active:hover, .btn-info.active:focus, .btn-info.active.focus, .open > .btn-info.dropdown-toggle:hover, .open > .btn-info.dropdown-toggle:focus, .open > .btn-info.dropdown-toggle.focus { color: #fff; background-color: #269abc; border-color: #1f7e9a; }
 
@@ -1587,7 +1587,7 @@ a.badge:focus, a.badge:hover { color: #fff; text-decoration: none; cursor: point
 
 .badge-info { background-color: #5bc0de; }
 
-.badge-info[href]:focus, .badge-info[href]:hover { background-color: #31b0d5; }
+.badge-info[href]:focus, .badge-info[href]:hover { background-color: #31.0.6; }
 
 .badge-warning { background-color: #f0ad4e; }
 
@@ -2007,7 +2007,7 @@ a.bg-success:focus, a.bg-success:hover { background-color: #449d44 !important; }
 
 .bg-info { background-color: #5bc0de !important; }
 
-a.bg-info:focus, a.bg-info:hover { background-color: #31b0d5 !important; }
+a.bg-info:focus, a.bg-info:hover { background-color: #31.0.6 !important; }
 
 .bg-warning { background-color: #f0ad4e !important; }
 
@@ -2739,7 +2739,7 @@ a.text-success:focus, a.text-success:hover { color: #449d44 !important; }
 
 .text-info { color: #5bc0de !important; }
 
-a.text-info:focus, a.text-info:hover { color: #31b0d5 !important; }
+a.text-info:focus, a.text-info:hover { color: #31.0.6 !important; }
 
 .text-warning { color: #f0ad4e !important; }
 

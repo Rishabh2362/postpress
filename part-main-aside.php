@@ -3,7 +3,7 @@
 * Include PostPress Slider 
 *
 * @package PostPress
-* @subpackage PostPress 1.0.5
+* @subpackage PostPress 1.0.6
 * @since PostPress 1.0.0
 */
 ?>
