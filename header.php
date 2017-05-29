@@ -43,10 +43,10 @@
 					if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
 							the_custom_logo();
 					} else {
-						if ( is_front_page() || is_home() ) : ?>
-							<h1><a href="<?php echo esc_url( home_url( ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php else : ?>
+						if ( is_single() || is_page() ) : ?>
 							<p class="site-title"><a href="<?php echo esc_url( home_url( ) ); ?>"><?php bloginfo( 'name' ); ?></a></p>
+						<?php else : ?>
+							<h1><a href="<?php echo esc_url( home_url( ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 						<?php endif; ?>
 						<p class="lead"><?php bloginfo( 'description' ); ?></p>
 					<?php } ?>
