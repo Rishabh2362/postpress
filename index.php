@@ -22,8 +22,11 @@
 			<?php get_template_part( 'part' , 'main-header' ); ?>	
 			</section>
 			
-
+			
 			<section id="list-posts">
+			<?php if ( is_category() || is_archive() || is_tag() || is_search() ) : ?>
+				<h1 class="skip"><?php wp_title(); ?></h1>
+			<?php endif; ?>
 				<?php get_template_part( 'part' , 'main-content' ); ?>
 			</section>
 			<section id="credits" role="contentinfo">
