@@ -4188,7 +4188,7 @@ input.submit { display: inline; float: right; max-width: 150px; }
 
 #list-posts article.sticky .text-muted { color: black; }
 
-#list-posts article.sticky .card-footer, #list-posts article.sticky .card-header, #list-posts li.comment article.sticky .comment-author { background-color: #43a7fd; border-top: 1px solid #0275d8; }
+#list-posts article.sticky .card-footer { background-color: #43a7fd; border-top: 1px solid #0275d8; }
 
 #list-posts li.comment { list-style-type: none; }
 

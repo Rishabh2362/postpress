@@ -151,7 +151,7 @@ input.submit{
 			.text-muted{
 				color: darken($brand-primary,50%);
 			}
-			.card-footer, .card-header{
+			.card-footer{
 				//border: 1px solid red;
 				//background-color: $brand-primary;
 				background-color: lighten( $brand-primary, 20% );
