@@ -127,13 +127,7 @@ input.submit{
 			@extend .card-inverse;
 			@extend .card-primary;
 			a{
-				//color: darken($brand-primary, 15%);
-				//color: white;
 				color: black;
-				&:hover{
-					//color: darken($brand-primary,50%);
-					//text-decoration: none;
-				}
 			}
 			h2.card-title{
 				@extend h4;
@@ -145,15 +139,12 @@ input.submit{
 				}
 			}
 			p, small{
-				//@extend .card-text;
 				color: black;
 			}
 			.text-muted{
 				color: darken($brand-primary,50%);
 			}
 			.card-footer{
-				//border: 1px solid red;
-				//background-color: $brand-primary;
 				background-color: lighten( $brand-primary, 20% );
 				border-top: 1px solid $brand-primary;
 			}
