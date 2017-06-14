@@ -27,7 +27,7 @@
 			</a>
 		</h2>
 	<?php } ?>
-		<p class="card-subtitle text-muted"><i class="fa fa-calendar-o"></i> <?php the_time( __( 'F jS, Y', 'postpress' ) ) ?> </p>
+		<p class="card-subtitle text-muted"><i class="fa fa-calendar-o"></i> <?php postpress_entry_date(); ?> </p>
 	</div>
 
 	<?php if ( is_single() || is_page() ) { ?>
