@@ -42,7 +42,7 @@
 		</main> <!-- / loop area-->
 
 		<!--begin secondary sidebar loading social icon-->
-		<div class="col-md-3" id="extras" role="complementary" aria-label="<?php _e( 'Secondary Sidebar', 'postpress' ); ?>">
+		<div class="col-md-3" id="extras" role="complementary" aria-label="<?php esc_attr_e( 'Secondary Sidebar', 'postpress' ); ?>">
 			<?php get_template_part( 'part' , 'main-aside' ); ?>
 		</div><!-- / secondary sidebar-->
 	</div>
