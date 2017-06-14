@@ -256,52 +256,52 @@ Load the fonts selected
 function postpress_change_google_fonts() {
 	$fonts = array(
 		'Covered' => array(
-			'name' => __('Covered By Your Grace'),
+			'name' => __( 'Covered By Your Grace', 'postpress' ),
 			'css' => 'Covered By Your Grace',
 			'query' => 'Covered+By+Your+Grace',
 		),
 		'Shadows' => array(
-			'name' => __('Shadows Into Light Two'),
+			'name' => __( 'Shadows Into Light Two', 'postpress' ),
 			'css' => 'Shadows Into Light Two',
 			'query' => 'Shadows+Into+Light+Two',
 		),
 		'Kalam' => array(
-			'name' => __('Kalam'),
+			'name' => __( 'Kalam', 'postpress' ),
 			'css' => 'Kalam',
 			'query' => 'Kalam',
 		),
 		'Patrick' => array(
-			'name' => __('Patrick Hand'),
+			'name' => __( 'Patrick Hand', 'postpress' ),
 			'css' => 'Patrick Hand',
 			'query' => 'Patrick+Hand',
 		),
 		'Neucha' => array(
-			'name' => __('Neucha'),
+			'name' => __( 'Neucha', 'postpress' ),
 			'css' => 'Neucha',
 			'query' => 'Neucha',
 		),
 		'Delius' => array(
-			'name' => __('Delius'),
+			'name' => __( 'Delius', 'postpress' ),
 			'css' => 'Delius',
 			'query' => 'Delius',
 		),
 		'Delius_Caps' => array(
-			'name' => __('Delius Swash Caps'),
+			'name' => __( 'Delius Swash Caps', 'postpress' ),
 			'css' => 'Delius Swash Caps',
 			'query' => 'Delius+Swash+Caps',
 		),
 		'Caveat' => array(
-			'name' => __('Caveat Brush'),
+			'name' => __( 'Caveat Brush', 'postpress' ),
 			'css' => 'Caveat Brush',
 			'query' => 'Caveat+Brush',
 		),
 		'Itim' => array(
-			'name' => __('Itim'),
+			'name' => __( 'Itim', 'postpress' ),
 			'css' => 'Itim',
 			'query' => 'Itim',
 		),
 		'Dekko' => array(
-			'name' => __('Dekko'),
+			'name' => __( 'Dekko', 'postpress' ),
 			'css' => 'Dekko',
 			'query' => 'Dekko',
 		),
