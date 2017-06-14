@@ -112,7 +112,7 @@ if ( $prev_link || $next_link ) { ?>
 <?php else : ?>
 	<article class="sticky">
 		<div class="card-header">
-			<h2 class="card-title"><?php esc_html_e( 'Sorry...','postpress' ); ?></h2>
+			<h2 class="card-title"><?php esc_html_e( 'Sorry&hellip;','postpress' ); ?></h2>
 			<p class="card-subtitle text-muted"><i class="fa fa-exclamation-circle"></i> <?php esc_html_e( 'Looks like something went wrong','postpress' ); ?> </p>
 		</div>
 		<div class="card-block">
