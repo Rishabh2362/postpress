@@ -11,8 +11,8 @@
  * Add support for a custom PostPress Settings.
  */
 
-include_once( 'postpress-customizer.php' );
-include_once( 'postpress-sanitize.php' );
+include_once( get_template_directory().'/postpress-customizer.php' );
+include_once( get_template_directory().'/postpress-sanitize.php' );
 
 /*
  * Enqueue scripts for the front end.
