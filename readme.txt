@@ -9,9 +9,14 @@ Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+== Description ==
+
 You have an idea, a note, a comment... Just post it onto PostPress!
 
-== LICENSES ==
+== Copyright ==
+
+PostPress WordPress Theme, Copyright 2017 aicragellebasi
+PostPress is distributed under the terms of the GNU GPL
 
 Bootstrap, copyright 2011-2015 Twitter, Inc
 Licensed under the terms of MIT license
