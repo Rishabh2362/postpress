@@ -5,7 +5,7 @@
  * Displays all of the <head> section and everything up till <section>
  *
  * @package WordPress
- * @subpackage PostPress 1.0.6
+ * @subpackage PostPress 1.0.7
  * @since PostPress 1.0.0
  */
 ?>
