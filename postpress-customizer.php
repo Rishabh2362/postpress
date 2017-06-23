@@ -308,7 +308,7 @@ function postpress_change_google_fonts() {
 	);
 	$paragraphs_font = get_theme_mod( 'paragraphs_fonts', 'Delius' );
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family='.$fonts[ $paragraphs_font ]['query'] );
+	wp_enqueue_style( 'postpress-google-fonts', esc_url( '//fonts.googleapis.com/css?family='.$fonts[ $paragraphs_font ]['query'], 'postpress' ) );
 
 	?>
 	<style type='text/css'>
@@ -369,7 +369,7 @@ function postpress_load_css_colors() {
 		),
 	);
 	$css_id = get_theme_mod( 'css_sheet', 'default' );
-	wp_enqueue_style( $css[ $css_id ]['file'], get_template_directory_uri().'/css/colors/'.$css[ $css_id ]['file'] );
+	wp_enqueue_style( $css[ $css_id ]['file'], get_template_directory_uri().'/css/colors/'.$css[ $css_id ]['file'], 'postpress' );
 
 }
 add_action( 'wp_head', 'postpress_load_css_colors' );
