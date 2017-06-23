@@ -3,7 +3,7 @@
 * Include the top widgets
 *
 * @package WordPress
-* @subpackage PostPress 1.0.7
+* @subpackage PostPress 1.0.8
 * @since PostPress 1.0.0
 */
 ?>

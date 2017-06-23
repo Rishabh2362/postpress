@@ -3,7 +3,7 @@
  * Include the search form in the top nav bar, formatted with Bootstrap styles
  *
  * @package PostPress
- * @subpackage PostPress 1.0.7
+ * @subpackage PostPress 1.0.8
  * @since PostPress 1.0.0
  */
 ?>
